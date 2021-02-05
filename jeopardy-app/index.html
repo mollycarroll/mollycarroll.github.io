@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
     <title>Jeopardy!</title>
 </head>
 <body>
 
 <div class="container">
+
+    <div class="status">
+        <div class="turn">
+            <h2>Turn:</h2>
+            <h2 id="turn-player">Player 1</h2>
+        </div>
+        <div class="round">
+            <h2>Round:</h2>
+            <h2 id="round-number">1</h2>
+        </div>
+    </div>
 
 <div class="category row">
 
@@ -34,8 +45,28 @@
 
 <div class="row">
 
-    <div class="question">
+    <div class="question" id="question-cats-10">
         <h3>10</h3>
+
+        <div id="question-modal-cats-10">
+            <p>This cat is orange and has green eyes.</p>
+            <form>
+                <input type="radio" id="cassian" value="Cassian">
+                <label for="cassian">Cassian?</label><br>
+
+                <input type="radio" id="starfire" value="Starfire">
+                <label for="starfire">Starfire?</label><br>
+
+                <input type="radio" id="lil-bub" value="Lil Bub">
+                <label for="lil-bub">Lil Bub?</label><br>
+
+                <input type="radio" id="grumpy-cat" value="Grumpy Cat">
+                <label for="grumpy-cat">Grumpy Cat?</label><br>
+
+                <button type="submit" id="question-cats-10-submit">Submit</button>
+            </form>
+        </div>
+
     </div>
     <div class="question">
         <h3>10</h3>
@@ -144,12 +175,12 @@
 
     <div class="player-score">
         <h2 class="score-text">Player 1 Score:</h2>
-        <h2 class="score-number">0</h2>
+        <h2 class="score-number" id="player-1-score">0</h2>
     </div>
 
     <div class="player-score">
         <h2 class="score-text">Player 2 Score:</h2>
-        <h2 class="score-number">0</h2>
+        <h2 class="score-number" id="player-2-score">0</h2>
     </div>
     
 </div>

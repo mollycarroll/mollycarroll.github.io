@@ -1,3 +1,5 @@
+/* Main grid styling */
+
 body {
     background-color: forestgreen;
 }
@@ -8,9 +10,13 @@ body {
     margin: auto;
 }
 
+.status {
+    display: flex;
+    justify-content: space-around;
+}
+
 .row {
     display: flex;
-    justify-content:space-between;
 }
 
 .one-category, .question, .final-question {
@@ -22,4 +28,17 @@ body {
 
 .scoreboard {
     justify-content: space-around;
+}
+
+/* Individual question modals */
+
+#question-modal-cats-10 {
+    display: none;
+    background-color: #ffffff;
+	z-index: 1;
+    position:absolute;
+	overflow: auto;
+    height: 400px;
+    width: 500px;
+    border: 1px solid #000000;
 }
