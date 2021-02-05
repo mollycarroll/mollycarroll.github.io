@@ -1,0 +1,25 @@
+body {
+    background-color: forestgreen;
+}
+
+.container {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content:space-between;
+}
+
+.one-category, .question, .final-question {
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.scoreboard {
+    justify-content: space-around;
+}
