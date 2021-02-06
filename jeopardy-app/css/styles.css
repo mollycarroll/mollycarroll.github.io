@@ -42,3 +42,13 @@ body {
     width: 500px;
     border: 1px solid #000000;
 }
+
+.update-correct {
+    text-align: center;
+    display: none;
+}
+
+.update-incorrect {
+    text-align: center;
+    display: none;
+}

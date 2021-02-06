@@ -1,35 +1,85 @@
+/*
+Problems to tackle:
 
-let player1Score = parseInt(document.querySelector('#player-1-score').textContent);
-let player2Score = parseInt(document.querySelector('#player-1-score').textContent);
-// will this update in the DOM?
+Does the existing question open if it's already been answered?
 
-let turnPlayer = document.querySelector('#turn-player').textContent;
+Player 2's turn -- need another question
+
+Increment round number after player 2's turn
+
+*/
 
 
-// will be question specific
+let player1Score = 0;
+let player2Score = 0;
+
+let turnPlayer = 1;
+
+
 const openQuestion = () => {
     document.querySelector('#question-modal-cats-10').style.display = 'block';
-    document.querySelector('form').addEventListener('submit', submitAnswer)
+    document.querySelector('form').addEventListener('submit', submitAnswer);
+}
+
+const closeQuestion = () => {
+    document.querySelector('#question-modal-cats-10').style.display = 'none';
+    
 }
 
 document.querySelector('#question-cats-10').addEventListener('click', openQuestion);
 
-// will be question specific
+// to switch rounds once turn is over
+const switchPlayer = () => {
+    if (turnPlayer === 1) {
+        turnPlayer = 2;
+        document.querySelector('#turn-player').innerHTML = 'Player 2';
+
+    } else if (turnPlayer === 2) {
+        turnPlayer = 1;
+        document.querySelector('#turn-player').innerHTML = 'Player 1';
+    }
+}
+
+// to add the specified score amount to the player's score
+const addToScore = (num) => {
+    if (turnPlayer === 1) {
+        player1Score = player1Score + num;
+        document.querySelector('#player-1-score').innerHTML = player1Score;
+
+        console.log(player1Score)
+
+    } else if (turnPlayer === 2) {
+        player2Score += num;
+        document.querySelector('#player-2-score').innerHTML = player2Score;
+
+        console.log(player2Score)
+    }
+
+}
+
+
 const submitAnswer = (e) => {
-    console.log('submit answer function')
     e.preventDefault();
 
     const starfire = document.querySelector('#starfire');
 
+    // if correct answer is chosen
     if (starfire.checked) {
-        alert('Correct!');
-        
-        if (turnPlayer === 'Player 1') {
-            player1Score += 10;
-        } else if (turnPlayer === 'Player 2') {
-            player2Score += 10;
-        }
+        document.querySelector('.update-correct').style.display = 'block';
 
+        addToScore(10);
+        
+        setTimeout(closeQuestion, 3000);
+
+    // if incorrect answer is chosen
+    } else if (!starfire.checked) {
+        console.log('incorrect answer submitted');
+
+        document.querySelector('.update-incorrect').style.display = 'block';
+
+        setTimeout(closeQuestion, 3000);
     }
+
+    switchPlayer();
 
 }
