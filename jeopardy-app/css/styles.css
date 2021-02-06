@@ -64,6 +64,28 @@ body {
     display: none;
 }
 
+/* second astro question */
+#question-modal-astro-20 {
+    display: none;
+    background-color: #ffffff;
+	z-index: 1;
+    position: absolute;
+	overflow: auto;
+    height: 400px;
+    width: 500px;
+    border: 1px solid #000000;
+}
+
+#update-correct-astro-20 {
+    text-align: center;
+    display: none;
+}
+
+#update-incorrect-astro-20 {
+    text-align: center;
+    display: none;
+}
+
 /* first HP question */
 #question-modal-hp-10 {
     display: none;

@@ -1,9 +1,16 @@
 /*
 Problems to tackle:
 
-Adding question and answer content in HTML
+Adding functions for each question?
 
-Adding functions for each question
+Can select if element attribute CONTAINS something https://stackoverflow.com/questions/31773599/can-i-use-an-attribute-selector-for-contains-in-queryselector 
+
+https://drafts.csswg.org/selectors/#overview
+
+TODO: 
+
+Add question and answer content in HTML
+Style each question/answer in CSS
 
 */
 
@@ -28,6 +35,7 @@ const switchPlayer = () => {
         roundNumber += 1;
 
         console.log('round updated to round: ' + roundNumber);
+        document.querySelector('#round-number').innerHTML = roundNumber;
     }
 }
 
@@ -83,6 +91,48 @@ const submitFirstAstroAnswer = (e) => {
         document.querySelector('#update-incorrect-astro-10').style.display = 'block';
 
         setTimeout(closeFirstAstroQuestion, 3000);
+    }
+
+    switchPlayer();
+
+}
+
+// second astro question
+const openSecondAstroQuestion = () => {
+    document.querySelector('#question-modal-astro-20').style.display = 'block';
+
+    document.querySelector('#question-form-astro-20').addEventListener('submit', submitSecondAstroAnswer);
+}
+
+const closeSecondAstroQuestion = () => {
+    document.querySelector('#question-modal-astro-20').style.display = 'none';
+
+    document.querySelector('#question-astro-20').style.backgroundColor = '#095CB0';
+
+    document.querySelector('#question-astro-20').removeEventListener('click', openSecondAstroQuestion);
+    
+}
+
+
+const submitSecondAstroAnswer = (e) => {
+    e.preventDefault();
+
+    const solarStorms = document.querySelector('#solar-storms');
+
+    // if correct answer is chosen
+    if (solarStorms.checked) {
+        document.querySelector('#update-correct-astro-20').style.display = 'block';
+
+        addToScore(20);
+        
+        setTimeout(closeSecondAstroQuestion, 3000);
+
+    // if incorrect answer is chosen
+    } else if (!solarStorms.checked) {
+
+        document.querySelector('#update-incorrect-astro-20').style.display = 'block';
+
+        setTimeout(closeSecondAstroQuestion, 3000);
     }
 
     switchPlayer();
@@ -165,8 +215,11 @@ const submitFirstGeoAnswer = (e) => {
 
 }
 
-// click event listeners for div rectangles
+// CLICK EVENT LISTENERS FOR BOXES
+
 document.querySelector('#question-astro-10').addEventListener('click', openFirstAstroQuestion);
+
+document.querySelector('#question-astro-20').addEventListener('click', openSecondAstroQuestion);
 
 document.querySelector('#question-hp-10').addEventListener('click', openFirstHPQuestion);
 
