@@ -7,6 +7,37 @@ Can select if element attribute CONTAINS something https://stackoverflow.com/que
 
 https://drafts.csswg.org/selectors/#overview
 
+IDEA: Could I make an HTML element a function's argument?
+
+const openQuestion = (modal, form) => {
+    modal.style.display = 'block';
+    form.addEventListener('submit', submitAnswer); <-- problem
+}
+
+const closeQuestion = (modal, box) => {
+    modal.style.display = 'none';
+
+    box.style.backgroundColor = '#color';
+    box.removeEventListener('click', openQuestion); <-- problem
+
+}
+
+const submitAnswer = (e, correctAnswer, correctUpdate, incorrectUpdate, pointsValue) => {
+    e.preventDefault();
+
+    if (correctAnswer.checked) {
+        correctUpdate.style.display = 'block';
+        addToScore(pointsValue);
+        setTimeout(closeQuestion, 3000); <-- problem
+    }
+}
+
+Example event listener to trigger for IDEA
+
+document.querySelector('#question-astro-10').addEventListener('click', openQuestion(document.querySelector('#question-modal-astro-10'), document.querySelector('#question-form-astro-10')));
+
+Another IDEA: Could make a "question object" that contains properties for each question's naming convention -- concatenated strings?
+
 TODO: 
 
 Add question and answer content in HTML
