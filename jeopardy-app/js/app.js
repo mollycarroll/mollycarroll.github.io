@@ -1,6 +1,8 @@
 /*
 Problems to tackle:
 
+Current behavior -- when HP 1 is answered, no appearance of message on submit, modal does not close, Astronomy 1 box turns blue
+
 Player 2's turn -- need another question
 
 Conditions for final round
@@ -15,10 +17,11 @@ let turnPlayer = 1;
 
 let roundNumber = 1;
 
-
+// first astro question
 const openQuestion = () => {
     document.querySelector('#question-modal-astro-10').style.display = 'block';
-    document.querySelector('form').addEventListener('submit', submitAnswer);
+
+    document.querySelector('#question-form-astro-10').addEventListener('submit', submitAnswer);
 }
 
 const closeQuestion = () => {
@@ -30,8 +33,26 @@ const closeQuestion = () => {
     
 }
 
-// click event listener(s) for div rectangle(s)
+// first HP question
+const openFirstHPQuestion = () => {
+    document.querySelector('#question-modal-hp-10').style.display = 'block';
+
+    document.querySelector('#question-form-hp-10').addEventListener('submit', submitFirstHPAnswer);
+}
+
+const closeFirstHPQuestion = () => {
+    document.querySelector('#question-modal-hp-10').style.display = 'none';
+
+    document.querySelector('#question-hp-10').style.backgroundColor = '#095CB0';
+
+    document.querySelector('#question-hp-10').removeEventListener('click', openFirstHPQuestion);
+}
+
+
+// click event listeners for div rectangles
 document.querySelector('#question-astro-10').addEventListener('click', openQuestion);
+
+document.querySelector('#question-hp-10').addEventListener('click', openFirstHPQuestion);
 
 // to switch rounds once turn is over
 const switchPlayer = () => {
@@ -43,6 +64,8 @@ const switchPlayer = () => {
         turnPlayer = 1;
         document.querySelector('#turn-player').innerHTML = 'Player 1';
         roundNumber += 1;
+
+        console.log('round updated to round: ' + roundNumber);
     }
 }
 
@@ -60,7 +83,6 @@ const addToScore = (num) => {
 }
 
 
-
 const submitAnswer = (e) => {
     e.preventDefault();
 
@@ -68,7 +90,7 @@ const submitAnswer = (e) => {
 
     // if correct answer is chosen
     if (gas.checked) {
-        document.querySelector('.update-correct').style.display = 'block';
+        document.querySelector('#update-correct-astro-10').style.display = 'block';
 
         addToScore(10);
         
@@ -77,9 +99,33 @@ const submitAnswer = (e) => {
     // if incorrect answer is chosen
     } else if (!gas.checked) {
 
-        document.querySelector('.update-incorrect').style.display = 'block';
+        document.querySelector('#update-incorrect-astro-10').style.display = 'block';
 
         setTimeout(closeQuestion, 3000);
+    }
+
+    switchPlayer();
+
+}
+
+const submitFirstHPAnswer = (e) => {
+    e.preventDefault();
+
+    const owl = document.querySelector('#owl');
+    console.log(owl);
+
+    if (owl.checked) {
+        document.querySelector('#update-correct-hp-10').style.display = 'block';
+
+        addToScore(10);
+        
+        setTimeout(closeFirstHPQuestion, 3000);
+
+    } else if (!owl.checked) {
+
+        document.querySelector('#update-incorrect-hp-10').style.display = 'block';
+
+        setTimeout(closeFirstHPQuestion, 3000);
     }
 
     switchPlayer();

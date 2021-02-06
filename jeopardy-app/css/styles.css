@@ -30,6 +30,16 @@ body {
     justify-content: space-around;
 }
 
+.update-correct {
+    text-align: center;
+    display: none;
+}
+
+.update-incorrect {
+    text-align: center;
+    display: none;
+}
+
 /* Individual question modals */
 
 #question-modal-astro-10 {
@@ -43,12 +53,33 @@ body {
     border: 1px solid #000000;
 }
 
-.update-correct {
+#update-correct-astro-10 {
     text-align: center;
     display: none;
 }
 
-.update-incorrect {
+#update-incorrect-astro-10 {
+    text-align: center;
+    display: none;
+}
+
+#question-modal-hp-10 {
+    display: none;
+    background-color: #ffffff;
+	z-index: 1;
+    position:absolute;
+	overflow: auto;
+    height: 400px;
+    width: 500px;
+    border: 1px solid #000000;
+}
+
+#update-correct-hp-10 {
+    text-align: center;
+    display: none;
+}
+
+#update-incorrect-hp-10 {
     text-align: center;
     display: none;
 }
