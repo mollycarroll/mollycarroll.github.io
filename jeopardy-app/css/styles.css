@@ -42,11 +42,12 @@ body {
 
 /* Individual question modals */
 
+/* first astro question */
 #question-modal-astro-10 {
     display: none;
     background-color: #ffffff;
 	z-index: 1;
-    position:absolute;
+    position: absolute;
 	overflow: auto;
     height: 400px;
     width: 500px;
@@ -63,11 +64,12 @@ body {
     display: none;
 }
 
+/* first HP question */
 #question-modal-hp-10 {
     display: none;
     background-color: #ffffff;
 	z-index: 1;
-    position:absolute;
+    position: absolute;
 	overflow: auto;
     height: 400px;
     width: 500px;
@@ -80,6 +82,28 @@ body {
 }
 
 #update-incorrect-hp-10 {
+    text-align: center;
+    display: none;
+}
+
+/* first geo question */
+#question-modal-geo-10 {
+    display: none;
+    background-color: #ffffff;
+	z-index: 1;
+    position: absolute;
+	overflow: auto;
+    height: 400px;
+    width: 500px;
+    border: 1px solid #000000;
+}
+
+#update-correct-geo-10 {
+    text-align: center;
+    display: none;
+}
+
+#update-incorrect-geo-10 {
     text-align: center;
     display: none;
 }
