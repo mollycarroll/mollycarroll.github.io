@@ -6,8 +6,13 @@ body {
 
 .container {
     background-color: white;
-    width: 70%;
-    margin: auto;
+    float: right;
+}
+
+.left-display {
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .status {
@@ -36,6 +41,16 @@ body {
 }
 
 .update-incorrect {
+    text-align: center;
+    display: none;
+}
+
+#update-correct {
+    text-align: center;
+    display: none;
+}
+
+#update-incorrect {
     text-align: center;
     display: none;
 }
@@ -127,5 +142,10 @@ body {
 
 #update-incorrect-geo-10 {
     text-align: center;
+    display: none;
+}
+
+/* first SW question */
+#question-form-sw-20 {
     display: none;
 }
