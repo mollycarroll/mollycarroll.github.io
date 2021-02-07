@@ -23,17 +23,20 @@ const selectQuestion = (question) => {
 
     // event listener on form submit to fire checkAnswer
 
-    document.querySelector('.question-form').addEventListener('submit', checkAnswer(question));
+    document.querySelector('.question-form').addEventListener('submit', function() {
+        checkAnswer(question);
+    });
     
 }
 
-const checkAnswer = (e, question) => {
+const checkAnswer = (question) => {
     console.log('checkAnswer fired');
 
     // check which options matches what is in the 'correct' key
     for (let i in question) {
-        if (i == question.correct) {
+        if (i === question.correct) {
             console.log('it worked! ' + i);
+            console.log('points: ' + question.points)
             addToScore(question.points);
         }
     }
@@ -43,4 +46,6 @@ const checkAnswer = (e, question) => {
 const starWars10Question = document.querySelector('#question-sw-10');
 
 
-starWars10Question.addEventListener('click', selectQuestion(questionBank[0]));
+starWars10Question.addEventListener('click', function() {
+    selectQuestion(questionBank[0]);
+});
