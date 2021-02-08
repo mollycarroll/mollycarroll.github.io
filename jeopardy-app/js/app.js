@@ -1,9 +1,7 @@
 /*
 TODO:
 
-Figure out how to persist functionality after first question is answered -- 2nd and 3rd not working in checkAnswer if statements
-
-Figure out how to remove the event listener after question is answered -- not working, line 68
+Figure out how to persist functionality after first question is answered -- 2nd and 3rd not working 
 
 */
 
@@ -73,9 +71,11 @@ const selectQuestion = (question) => {
 const checkAnswer = (question) => {
     console.log('checkAnswer fired line 74');
 
+    console.log(document.querySelector('input#' + question.correct));
+
     if (document.querySelector('input#' + question.correct).checked === true) {
 
-        document.querySelector('.question-form').innerHTML = 'Correct!';
+        document.querySelector('.question-form').innerHTML = 'Correct! You get ' + question.points + ' points.';
 
         addToScore(parseInt(question.points));
 
@@ -87,19 +87,29 @@ const checkAnswer = (question) => {
 
     switchPlayer();
 
+    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#095CB0';
+
+    document.querySelector('#question-' + question.identifier + '-' + question.points).onclick = "";
+
 }
 
+// TODO:
+
+// it stays on Player 2 after P2's first turn, but goes to Round 2
+// the rounds progress too fast -- how to fix?
 
 // to switch rounds once turn is over
 const switchPlayer = () => {
 
     if (turnPlayer === 1) {
+        console.log('turn player is ' + turnPlayer)
         turnPlayer = 2;
         document.querySelector('#turn-player').innerHTML = 'Player 2';
 
     } else if (turnPlayer === 2) {
+        console.log('turn player is ' + turnPlayer)
         turnPlayer = 1;
-        document.querySelector('#turn-player').innerHTML = 'Player 1';
+        document.querySelector('#turn-player').innerHTML = 'Player 1'; 
         roundNumber += 1;
 
         console.log('round updated to round: ' + roundNumber);
@@ -111,7 +121,6 @@ const switchPlayer = () => {
 
 // to add the specified score amount to the player's score
 const addToScore = (num) => {
-    console.log('addToScore fired and ' + num + ' points are being added');
 
     if (turnPlayer === 1) {
         player1Score = player1Score + num;
@@ -127,31 +136,6 @@ const addToScore = (num) => {
 
 /* 
 
-document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#095CB0';
 
-document.querySelector('#question-' + question.identifier + '-' + question.points).removeEventListener('click', selectQuestion);
-
-    // check which option matches what is in the 'correct' key by looping through them
-    for (let i in question) {
-
-        if (i === question.correct) {
-            // if the iterated key is the same as the value of the question's 'correct' key
-
-            console.log(document.querySelector('input#' + i));
-
-            if (document.querySelector('input#option3').checked) {
-
-                document.querySelector('.question-form').innerHTML = 'Correct!';
-
-                addToScore(parseInt(question.points));
-
-            } else if (!document.querySelector('input#' + i).checked) {
-
-                document.querySelector('.question-form').innerHTML = 'Incorrect!';
-            
-            }
-
-        }
-    }
                 
 */
