@@ -57,6 +57,10 @@ const selectQuestion = (question) => {
 
     document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" id="question-' + question.identifier + '-' + question.points + '-submit">Submit</button>';
 
+    // clear correct/incorrect message
+    document.querySelector('.message-correct').style.display = 'none';
+    document.querySelector('.message-incorrect').style.display = 'none';
+
     // event listener on form submit to fire checkAnswer
 
     document.querySelector('.question-form').addEventListener('submit', function(e) {
@@ -71,17 +75,19 @@ const selectQuestion = (question) => {
 const checkAnswer = (question) => {
     console.log('checkAnswer fired line 74');
 
+    // console.log('question.correct = ' + question.correct)
+
     console.log(document.querySelector('input#' + question.correct));
 
     if (document.querySelector('input#' + question.correct).checked === true) {
 
-        document.querySelector('.question-form').innerHTML = 'Correct! You get ' + question.points + ' points.';
+        document.querySelector('.message-correct').style.display = 'block';
 
         addToScore(parseInt(question.points));
 
     } else if (document.querySelector('input#' + question.correct).checked === false) {
 
-        document.querySelector('.question-form').innerHTML = 'Incorrect!';
+        document.querySelector('.message-incorrect').style.display = 'block';
 
     }
 
@@ -102,17 +108,17 @@ const checkAnswer = (question) => {
 const switchPlayer = () => {
 
     if (turnPlayer === 1) {
-        console.log('turn player is ' + turnPlayer)
+        // console.log('turn player is ' + turnPlayer)
         turnPlayer = 2;
         document.querySelector('#turn-player').innerHTML = 'Player 2';
 
     } else if (turnPlayer === 2) {
-        console.log('turn player is ' + turnPlayer)
+        // console.log('turn player is ' + turnPlayer)
         turnPlayer = 1;
         document.querySelector('#turn-player').innerHTML = 'Player 1'; 
         roundNumber += 1;
 
-        console.log('round updated to round: ' + roundNumber);
+        // console.log('round updated to round: ' + roundNumber);
         document.querySelector('#round-number').innerHTML = roundNumber;
     }
 

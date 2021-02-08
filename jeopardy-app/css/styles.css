@@ -35,6 +35,10 @@ body {
     justify-content: space-around;
 }
 
+.message-correct, .message-incorrect {
+    display: none;
+}
+
 
 #question-modal-astro-20 {
     display: none;
