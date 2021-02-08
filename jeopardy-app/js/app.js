@@ -77,6 +77,50 @@ let questionBank = [
         'identifier': 'astro',
         'name': 'second-astro',
         'correct': 'option1'
+    },
+    {
+        'statement': 'This magical creature was involved in the second task of the Triwizard Tournament.',
+        'option1': 'What are dragons?',
+        'option2': 'What are centaurs?',
+        'option3': 'What are Blast-Ended Skrewts?',
+        'option4': 'What are mermaids?',
+        'points': '20',
+        'identifier': 'hp',
+        'name': 'second-hp',
+        'correct': 'option4'
+    },
+    {
+        'statement': 'This is the largest country in the Caribbean.',
+        'option1': 'What is the Dominican Republic?',
+        'option2': 'What is Cuba?',
+        'option3': 'What is Haiti?',
+        'option4': 'What is Jamaica?',
+        'points': '20',
+        'identifier': 'geo',
+        'name': 'second-geo',
+        'correct': 'option2'
+    },
+    {
+        'statement': 'Anakin Skywalker and Obi-Wan Kenobi duel on this planet in Star Wars: Episode III - Revenge of the Sith.',
+        'option1': 'What is Mustafar?',
+        'option2': 'What is Geonosis?',
+        'option3': 'What is Tatooine?',
+        'option4': 'What is Utapau?',
+        'points': '20',
+        'identifier': 'sw',
+        'name': 'second-sw',
+        'correct': 'option1'
+    },
+    {
+        'statement': 'This new weapon appeared on September 15, 1916.',
+        'option1': 'What is the figther plane?',
+        'option2': 'What are chemical weapons?',
+        'option3': 'What is the depth charge?',
+        'option4': 'What is the tank?',
+        'points': '20',
+        'identifier': 'history',
+        'name': 'second-history',
+        'correct': 'option4'
     }
 ]
 
