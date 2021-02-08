@@ -1,4 +1,8 @@
 /*
+
+extra question source: https://thoughtcatalog.com/katee-fletcher/2020/04/star-wars-trivia-questions/ 
+https://jeopardyquestions.com/ 
+
 TODO:
 
 
@@ -12,6 +16,7 @@ let turnPlayer = 1;
 let roundNumber = 1;
 
 let questionBank = [
+    /* 10 POINTS ROW */
     {
         'statement': 'Jupiter is mostly made of this substance.',
         'option1': 'What is gas?',
@@ -67,6 +72,7 @@ let questionBank = [
         'name': 'first-history',
         'correct': 'option3'
     },
+    /* 20 POINTS ROW */
     {
         'statement': 'The Sun produces huge storms by this name.',
         'option1': 'What are solar storms?',
@@ -101,7 +107,7 @@ let questionBank = [
         'correct': 'option2'
     },
     {
-        'statement': 'Anakin Skywalker and Obi-Wan Kenobi duel on this planet in Star Wars: Episode III - Revenge of the Sith.',
+        'statement': 'Anakin Skywalker and Obi-Wan Kenobi duel on this planet in <i>Star Wars: Episode III - Revenge of the Sith</i>.',
         'option1': 'What is Mustafar?',
         'option2': 'What is Geonosis?',
         'option3': 'What is Tatooine?',
@@ -121,13 +127,123 @@ let questionBank = [
         'identifier': 'history',
         'name': 'second-history',
         'correct': 'option4'
+    },
+    /* 30 POINTS ROW */
+    {
+        'statement': 'This is the name of the boundary around a black hole, beyond which events cannot affect an observer.',
+        'option1': 'What is the accretion disk?',
+        'option2': 'What is the escape velocity?',
+        'option3': 'What is the event horizon?',
+        'option4': 'What is the singularity?',
+        'points': '30',
+        'identifier': 'astro',
+        'name': 'third-astro',
+        'correct': 'option3'
+    },
+    {
+        'statement': 'This is the author of <i>Hogwarts: A History</i>.',
+        'option1': 'Who is Mordicus Egg?',
+        'option2': 'Who is Bathilda Bagshot?',
+        'option3': 'Who is Newt Scamander?',
+        'option4': 'Who is Miranda Goshawk?',
+        'points': '30',
+        'identifier': 'hp',
+        'name': 'third-hp',
+        'correct': 'option2'
+    },
+    {
+        'statement': 'This is India\'s national bird.',
+        'option1': 'What is the pheasant?',
+        'option2': 'What is the swan?',
+        'option3': 'What is the peacock?',
+        'option4': 'What is the quail?',
+        'points': '30',
+        'identifier': 'geo',
+        'name': 'third-geo',
+        'correct': 'option3'
+    },
+    {
+        'statement': 'This is the only Rebel Alliance pilot to survive all three movies in the original trilogy.',
+        'option1': 'Who is Wedge Antilles?',
+        'option2': 'Who is Norra Wexley?',
+        'option3': 'Who is Nien Nunb?',
+        'option4': 'Who is Biggs Darklighter?',
+        'points': '30',
+        'identifier': 'sw',
+        'name': 'third-sw',
+        'correct': 'option1'
+    },
+    {
+        'statement': 'This is the name of the Beatles\' debut album.',
+        'option1': 'What is <i>Twist and Shout</i>?',
+        'option2': 'What is <i>Introducing... The Beatles</i>?',
+        'option3': 'What is <i>A Hard Day\'s Night</i>?',
+        'option4': 'What is <i>Please Please Me</i>?',
+        'points': '30',
+        'identifier': 'history',
+        'name': 'third-history',
+        'correct': 'option4'
+    },
+    /* 40 POINTS ROW */
+    {
+        'statement': 'This is the only moon in our solar system that has an atmosphere.',
+        'option1': 'What is Uranus\' moon Oberon?',
+        'option2': 'What is Saturn\'s moon Titan?',
+        'option3': 'What is Mars\' moon Phobos?',
+        'option4': 'What is Jupiter\'s moon Io?',
+        'points': '40',
+        'identifier': 'astro',
+        'name': 'fourth-astro',
+        'correct': 'option2'
+    },
+    {
+        'statement': 'Tina Goldstein was sorted into this house at Ilvermorny School of Witchcraft and Wizardry.',
+        'option1': 'What is Horned Serpent?',
+        'option2': 'What is Wampus?',
+        'option3': 'What is Pukwudgie?',
+        'option4': 'What is Thunderbird?',
+        'points': '40',
+        'identifier': 'hp',
+        'name': 'fourth-hp',
+        'correct': 'option4'
+    },
+    {
+        'statement': 'This country controls Easter Island.',
+        'option1': 'What is Chile?',
+        'option2': 'What is Peru?',
+        'option3': 'What is Argentina?',
+        'option4': 'What is Bolivia?',
+        'points': '40',
+        'identifier': 'geo',
+        'name': 'fourth-geo',
+        'correct': 'option1'
+    },
+    {
+        'statement': 'Luke Skywalker exiles himself to this planet in <i>Star Wars: Episode VII - The Force Awakens</i>.',
+        'option1': 'What is Dagobah?',
+        'option2': 'What is Tython?',
+        'option3': 'What is Ahch-To?',
+        'option4': 'What is Pillio?',
+        'points': '40',
+        'identifier': 'sw',
+        'name': 'fourth-sw',
+        'correct': 'option3'
+    },
+    {
+        'statement': 'The League of Nations met for the first time in this European city.',
+        'option1': 'What is Brussels?',
+        'option2': 'What is Paris?',
+        'option3': 'What is The Hague?',
+        'option4': 'What is Geneva?',
+        'points': '40',
+        'identifier': 'history',
+        'name': 'fourth-history',
+        'correct': 'option4'
+    },
+    {
+        
     }
 ]
-
-/*
-
-
-*/
 
 // selectQuestion fires when a user clicks a question box
 
