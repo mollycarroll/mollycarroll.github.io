@@ -35,7 +35,7 @@ const selectQuestion = (question) => {
 
     // dynamically display form content based on question param
 
-    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" id="question-' + question.identifier + '-' + question.points + '-submit">Submit</button>';
+    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" id="question-' + question.identifier + '-' + question.points + '-submit">Submit</button>';
 
     // event listener on form submit to fire checkAnswer
 
@@ -46,23 +46,20 @@ const selectQuestion = (question) => {
     
 }
 
-// checkAnswer fires when a user submits the answer form
+// checkAnswer fires when a user submits the answer form, takes a question object as an argument
 
 const checkAnswer = (question) => {
     console.log('checkAnswer fired');
 
-    // check which option matches what is in the 'correct' key
+    // check which option matches what is in the 'correct' key by looping through them
     for (let i in question) {
 
         if (i === question.correct) {
             // if the iterated key is the same as the value of the question's 'correct' key
 
-            console.log('the correct answer is ' + i);
+            console.log('the correct answer is ' + i); 
 
-
-            // PROBLEM AREA:
-
-            if (i.checked) {
+            if (document.querySelector('#' + i).checked) {
                 console.log('You are correct!!!')
             }
 
@@ -70,6 +67,7 @@ const checkAnswer = (question) => {
     }
 
     switchPlayer();
+    // this succeeds in firing switchPlayer
 
 }
 
