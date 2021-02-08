@@ -15,25 +15,25 @@ let roundNumber = 1;
 let questionBank = [
     {
         'statement': 'Jupiter is mostly made of this substance.',
-        'option1': 'What is rock?',
-        'option2': 'What is gas?',
+        'option1': 'What is gas?',
+        'option2': 'What is rock?',
         'option3': 'What is liquid?',
         'option4': 'What is metal?',
         'points': '10',
         'identifier': 'astro',
         'name': 'first-astro',
-        'correct': 'option2'
+        'correct': 'option1'
     },
     {
         'statement': 'Harry Potter brought this type of pet to Hogwarts.',
         'option1': 'What is a snake?',
         'option2': 'What is a cat?',
-        'option3': 'What is an owl?',
-        'option4': 'What is a toad?',
+        'option3': 'What is a toad',
+        'option4': 'What is an owl?',
         'points': '10',
         'identifier': 'hp',
         'name': 'first-hp',
-        'correct': 'option3'
+        'correct': 'option4'
     },
     {
         'statement': 'It is this season in Australia in December.',
@@ -55,7 +55,7 @@ const selectQuestion = (question) => {
 
     // dynamically display form content based on question param
 
-    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" id="question-' + question.identifier + '-' + question.points + '-submit">Submit</button>';
+    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" class="submit-answer">Submit</button>';
 
     // clear correct/incorrect message
     document.querySelector('.message-correct').style.display = 'none';
@@ -63,9 +63,9 @@ const selectQuestion = (question) => {
 
     // event listener on form submit to fire checkAnswer
 
-    document.querySelector('.question-form').addEventListener('submit', function(e) {
+    document.querySelector('.submit-answer').addEventListener('click', function(e) {
         e.preventDefault();
-        checkAnswer(question)
+        checkAnswer(question);
     });
     
 }
