@@ -1,9 +1,9 @@
 /*
 TODO:
 
-Figure out how to check if correct answer is checked in form -- see PROBLEM AREA
+Figure out how to persist functionality after first question is answered -- 2nd and 3rd not working in checkAnswer if statements
 
-Add points to player if they got the correct answer
+Figure out how to remove the event listener after question is answered -- not working, line 68
 
 */
 
@@ -25,13 +25,35 @@ let questionBank = [
         'identifier': 'astro',
         'name': 'first-astro',
         'correct': 'option2'
+    },
+    {
+        'statement': 'Harry Potter brought this type of pet to Hogwarts.',
+        'option1': 'What is a snake?',
+        'option2': 'What is a cat?',
+        'option3': 'What is an owl?',
+        'option4': 'What is a toad?',
+        'points': '10',
+        'identifier': 'hp',
+        'name': 'first-hp',
+        'correct': 'option3'
+    },
+    {
+        'statement': 'It is this season in Australia in December.',
+        'option1': 'What is winter?',
+        'option2': 'What is spring?',
+        'option3': 'What is summer?',
+        'option4': 'What is fall?',
+        'points': '10',
+        'identifier': 'geo',
+        'name': 'first-geo',
+        'correct': 'option3'
     }
 ]
 
 // selectQuestion fires when a user clicks a question box
 
 const selectQuestion = (question) => {
-    console.log('selectQuestion fired');
+    console.log('selectQuestion fired line 56');
 
     // dynamically display form content based on question param
 
@@ -49,35 +71,29 @@ const selectQuestion = (question) => {
 // checkAnswer fires when a user submits the answer form, takes a question object as an argument
 
 const checkAnswer = (question) => {
-    console.log('checkAnswer fired');
+    console.log('checkAnswer fired line 74');
 
-    // check which option matches what is in the 'correct' key by looping through them
-    for (let i in question) {
+    if (document.querySelector('input#' + question.correct).checked === true) {
 
-        if (i === question.correct) {
-            // if the iterated key is the same as the value of the question's 'correct' key
+        document.querySelector('.question-form').innerHTML = 'Correct!';
 
-            console.log('the correct answer is ' + i); 
+        addToScore(parseInt(question.points));
 
-            if (document.querySelector('#' + i).checked) {
-                console.log('You are correct!!!')
-            }
+    } else if (document.querySelector('input#' + question.correct).checked === false) {
 
-        }
+        document.querySelector('.question-form').innerHTML = 'Incorrect!';
+
     }
 
     switchPlayer();
-    // this succeeds in firing switchPlayer
 
 }
 
 
 // to switch rounds once turn is over
 const switchPlayer = () => {
-    console.log('switchPlayer fired')
 
     if (turnPlayer === 1) {
-        console.log('switching from player 1 to player 2')
         turnPlayer = 2;
         document.querySelector('#turn-player').innerHTML = 'Player 2';
 
@@ -98,193 +114,44 @@ const addToScore = (num) => {
     console.log('addToScore fired and ' + num + ' points are being added');
 
     if (turnPlayer === 1) {
-        console.log('turnPlayer is 1 so player 1 is getting points')
         player1Score = player1Score + num;
         document.querySelector('#player-1-score').innerHTML = player1Score;
 
     } else if (turnPlayer === 2) {
-        console.log('turnPlayer is 2 so player 2 is getting points')
         player2Score += num;
         document.querySelector('#player-2-score').innerHTML = player2Score;
     }
 
 }
 
-document.querySelector('#question-astro-10').addEventListener('click', function() {
-    selectQuestion(questionBank[0]);
-});
 
+/* 
 
-// CLICK EVENT LISTENERS FOR BOXES
+document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#095CB0';
 
-// document.querySelector('#question-astro-10').addEventListener('click', openFirstAstroQuestion);
+document.querySelector('#question-' + question.identifier + '-' + question.points).removeEventListener('click', selectQuestion);
 
-// document.querySelector('#question-astro-20').addEventListener('click', openSecondAstroQuestion);
+    // check which option matches what is in the 'correct' key by looping through them
+    for (let i in question) {
 
-// document.querySelector('#question-hp-10').addEventListener('click', openFirstHPQuestion);
+        if (i === question.correct) {
+            // if the iterated key is the same as the value of the question's 'correct' key
 
-// document.querySelector('#question-geo-10').addEventListener('click', openFirstGeoQuestion);
+            console.log(document.querySelector('input#' + i));
 
+            if (document.querySelector('input#option3').checked) {
 
-// QUESTION-SPECIFIC FUNCTIONS
+                document.querySelector('.question-form').innerHTML = 'Correct!';
 
-// first astro question
-// const openFirstAstroQuestion = () => {
-//     document.querySelector('#question-modal-astro-10').style.display = 'block';
+                addToScore(parseInt(question.points));
 
-//     document.querySelector('#question-form-astro-10').addEventListener('submit', submitFirstAstroAnswer);
-// }
+            } else if (!document.querySelector('input#' + i).checked) {
 
-// const closeFirstAstroQuestion = () => {
-//     document.querySelector('#question-modal-astro-10').style.display = 'none';
+                document.querySelector('.question-form').innerHTML = 'Incorrect!';
+            
+            }
 
-//     document.querySelector('#question-astro-10').style.backgroundColor = '#095CB0';
-
-//     document.querySelector('#question-astro-10').removeEventListener('click', openFirstAstroQuestion);
-    
-// }
-
-
-// const submitFirstAstroAnswer = (e) => {
-//     e.preventDefault();
-
-//     const gas = document.querySelector('#gas');
-
-//     // if correct answer is chosen
-//     if (gas.checked) {
-//         document.querySelector('#update-correct-astro-10').style.display = 'block';
-
-//         addToScore(10);
-        
-//         setTimeout(closeFirstAstroQuestion, 3000);
-
-//     // if incorrect answer is chosen
-//     } else if (!gas.checked) {
-
-//         document.querySelector('#update-incorrect-astro-10').style.display = 'block';
-
-//         setTimeout(closeFirstAstroQuestion, 3000);
-//     }
-
-//     switchPlayer();
-
-// }
-
-// // second astro question
-// const openSecondAstroQuestion = () => {
-//     document.querySelector('#question-modal-astro-20').style.display = 'block';
-
-//     document.querySelector('#question-form-astro-20').addEventListener('submit', submitSecondAstroAnswer);
-// }
-
-// const closeSecondAstroQuestion = () => {
-//     document.querySelector('#question-modal-astro-20').style.display = 'none';
-
-//     document.querySelector('#question-astro-20').style.backgroundColor = '#095CB0';
-
-//     document.querySelector('#question-astro-20').removeEventListener('click', openSecondAstroQuestion);
-    
-// }
-
-
-// const submitSecondAstroAnswer = (e) => {
-//     e.preventDefault();
-
-//     const solarStorms = document.querySelector('#solar-storms');
-
-//     // if correct answer is chosen
-//     if (solarStorms.checked) {
-//         document.querySelector('#update-correct-astro-20').style.display = 'block';
-
-//         addToScore(20);
-        
-//         setTimeout(closeSecondAstroQuestion, 3000);
-
-//     // if incorrect answer is chosen
-//     } else if (!solarStorms.checked) {
-
-//         document.querySelector('#update-incorrect-astro-20').style.display = 'block';
-
-//         setTimeout(closeSecondAstroQuestion, 3000);
-//     }
-
-//     switchPlayer();
-
-// }
-
-// // first HP question
-// const openFirstHPQuestion = () => {
-//     document.querySelector('#question-modal-hp-10').style.display = 'block';
-
-//     document.querySelector('#question-form-hp-10').addEventListener('submit', submitFirstHPAnswer);
-// }
-
-// const closeFirstHPQuestion = () => {
-//     document.querySelector('#question-modal-hp-10').style.display = 'none';
-
-//     document.querySelector('#question-hp-10').style.backgroundColor = '#095CB0';
-
-//     document.querySelector('#question-hp-10').removeEventListener('click', openFirstHPQuestion);
-// }
-
-// const submitFirstHPAnswer = (e) => {
-//     e.preventDefault();
-
-//     const owl = document.querySelector('#owl');
-
-//     if (owl.checked) {
-//         document.querySelector('#update-correct-hp-10').style.display = 'block';
-
-//         addToScore(10);
-        
-//         setTimeout(closeFirstHPQuestion, 3000);
-
-//     } else if (!owl.checked) {
-
-//         document.querySelector('#update-incorrect-hp-10').style.display = 'block';
-
-//         setTimeout(closeFirstHPQuestion, 3000);
-//     }
-
-//     switchPlayer();
-
-// }
-
-// // first geo question
-// const openFirstGeoQuestion = () => {
-//     document.querySelector('#question-modal-geo-10').style.display = 'block';
-
-//     document.querySelector('#question-form-geo-10').addEventListener('submit', submitFirstGeoAnswer);
-// }
-
-// const closeFirstGeoQuestion = () => {
-//     document.querySelector('#question-modal-geo-10').style.display = 'none';
-
-//     document.querySelector('#question-geo-10').style.backgroundColor = '#095CB0';
-
-//     document.querySelector('#question-geo-10').removeEventListener('click', openFirstGeoQuestion);
-// }
-
-// const submitFirstGeoAnswer = (e) => {
-//     e.preventDefault();
-
-//     const summer = document.querySelector('#summer');
-
-//     if (summer.checked) {
-//         document.querySelector('#update-correct-geo-10').style.display = 'block';
-
-//         addToScore(10);
-        
-//         setTimeout(closeFirstGeoQuestion, 3000);
-
-//     } else if (!summer.checked) {
-
-//         document.querySelector('#update-incorrect-geo-10').style.display = 'block';
-
-//         setTimeout(closeFirstGeoQuestion, 3000);
-//     }
-
-//     switchPlayer();
-
-// }
-
+        }
+    }
+                
+*/
