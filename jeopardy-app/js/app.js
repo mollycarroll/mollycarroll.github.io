@@ -1,7 +1,6 @@
 /*
 TODO:
 
-Figure out how to persist functionality after first question is answered -- 2nd and 3rd not working 
 
 */
 
@@ -45,8 +44,46 @@ let questionBank = [
         'identifier': 'geo',
         'name': 'first-geo',
         'correct': 'option3'
+    }, 
+    {
+        'statement': 'This is the name of Han Solo\'s ship.',
+        'option1': 'What is the Kessel Run?',
+        'option2': 'What is the Millenium Falcon?',
+        'option3': 'What is the Corellian Star?',
+        'option4': 'What is the Lando\'s Revenge?',
+        'points': '10',
+        'identifier': 'sw',
+        'name': 'first-sw',
+        'correct': 'option2'
+    },
+    {
+        'statement': 'This explorer led the first expedition to sail around the world.',
+        'option1': 'Who was Marco Polo?',
+        'option2': 'Who was Christopher Columbus?',
+        'option3': 'Who was Ferdinand Magellan?',
+        'option4': 'Who was Sir Francis Drake?',
+        'points': '10',
+        'identifier': 'history',
+        'name': 'first-history',
+        'correct': 'option3'
+    },
+    {
+        'statement': 'The Sun produces huge storms by this name.',
+        'option1': 'What are solar storms?',
+        'option2': 'What are sunstorms?',
+        'option3': 'What are solar flares?',
+        'option4': 'What are sundogs?',
+        'points': '20',
+        'identifier': 'astro',
+        'name': 'second-astro',
+        'correct': 'option1'
     }
 ]
+
+/*
+
+
+*/
 
 // selectQuestion fires when a user clicks a question box
 
@@ -77,7 +114,7 @@ const checkAnswer = (question) => {
 
     // console.log('question.correct = ' + question.correct)
 
-    console.log(document.querySelector('input#' + question.correct));
+    // console.log(document.querySelector('input#' + question.correct));
 
     if (document.querySelector('input#' + question.correct).checked === true) {
 
@@ -98,11 +135,6 @@ const checkAnswer = (question) => {
     document.querySelector('#question-' + question.identifier + '-' + question.points).onclick = "";
 
 }
-
-// TODO:
-
-// it stays on Player 2 after P2's first turn, but goes to Round 2
-// the rounds progress too fast -- how to fix?
 
 // to switch rounds once turn is over
 const switchPlayer = () => {
