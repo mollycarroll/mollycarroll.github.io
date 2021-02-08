@@ -1,10 +1,20 @@
 /*
 
-extra question source: https://thoughtcatalog.com/katee-fletcher/2020/04/star-wars-trivia-questions/ 
+extra question sources: https://thoughtcatalog.com/katee-fletcher/2020/04/star-wars-trivia-questions/ 
 https://jeopardyquestions.com/ 
 
 TODO:
 
+Add conditions for Final Question -- keep it to a limit of rounds or do every question until final? 
+    - Limit of rounds: 4, then Final
+
+IF round number = 4, fire FinalQuestion function - be sure both players have taken a turn in round 4
+
+Change color of FQ box and populate side display with FQ, gray out numbers in boxes?
+
+FQ is traditional round, P1 goes then P2 but each get different questions
+
+FQ is worth 50 points
 
 */
 
@@ -70,17 +80,14 @@ const checkAnswer = (question) => {
 const switchPlayer = () => {
 
     if (turnPlayer === 1) {
-        // console.log('turn player is ' + turnPlayer)
         turnPlayer = 2;
         document.querySelector('#turn-player').innerHTML = 'Player 2';
 
     } else if (turnPlayer === 2) {
-        // console.log('turn player is ' + turnPlayer)
         turnPlayer = 1;
         document.querySelector('#turn-player').innerHTML = 'Player 1'; 
         roundNumber += 1;
 
-        // console.log('round updated to round: ' + roundNumber);
         document.querySelector('#round-number').innerHTML = roundNumber;
     }
 
@@ -100,10 +107,3 @@ const addToScore = (num) => {
     }
 
 }
-
-
-/* 
-
-
-                
-*/
