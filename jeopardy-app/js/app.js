@@ -5,16 +5,7 @@ https://jeopardyquestions.com/
 
 TODO:
 
-Add conditions for Final Question -- keep it to a limit of rounds or do every question until final? 
-    - Limit of rounds: 4, then Final
-
-IF round number = 4, fire FinalQuestion function - be sure both players have taken a turn in round 4
-
-Change color of FQ box and populate side display with FQ, gray out numbers in boxes?
-
-FQ is traditional round, P1 goes then P2 but each get different questions
-
-FQ is worth 50 points
+Figure out how to remove onclick attribute from ALL question divs at Final Round
 
 */
 
@@ -116,6 +107,8 @@ const finalRound = () => {
     document.querySelector('#round-number').innerHTML = 'Final Round';
     console.log('finalRound called');
 
+    document.querySelectorAll('div.question').onclick = '';
+
     // highlight final question div yellow
     document.querySelector('div.final-question').style.backgroundColor = '#f8e350';
 
@@ -160,15 +153,36 @@ const checkFinalAnswer = (question) => {
 
     }
 
+    finalSwitchPlayer();
+
 }
 
-
+// switch from player 1's final question to player 2's final question
 const finalSwitchPlayer = () => {
 
     if (turnPlayer === 1) {
         turnPlayer = 2;
         document.querySelector('#turn-player').innerHTML = 'Player 2';
         selectFinalQuestion(questionBank[26]);
+
+    } else {
+        calculateWinner();
+    }
+
+}
+
+// calculate who won and display a message
+const calculateWinner = () => {
+
+    if (player1Score > player2Score) {
+        alert('Game over. Player 1 won!');
+    
+    } else if (player2Score > player1Score) {
+        alert('Game over. Player 2 won!');
+
+    } else if (player1Score === player2Score) {
+        alert('Game over. It\'s a tie!');
+
     }
 
 }
