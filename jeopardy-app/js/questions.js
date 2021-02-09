@@ -302,3 +302,12 @@ let questionBank = [
         'correct': 'option4'
     }
 ]
+
+/*
+
+Sources for questions:
+https://www.triviawell.com
+https://jeopardyquestions.com/ 
+https://thoughtcatalog.com/katee-fletcher/2020/04/star-wars-trivia-questions/ 
+
+*/

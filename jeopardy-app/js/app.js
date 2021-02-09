@@ -1,8 +1,5 @@
 /*
 
-extra question sources: https://thoughtcatalog.com/katee-fletcher/2020/04/star-wars-trivia-questions/ 
-https://jeopardyquestions.com/ 
-
 TODO:
 
 Figure out how to remove onclick attribute from ALL question divs at Final Round - check line 107
@@ -79,6 +76,7 @@ const switchPlayer = () => {
 
         } else {
             finalRound();
+            removeOnClick();
         }
     }
 
@@ -102,9 +100,6 @@ const addToScore = (num) => {
 // final round
 const finalRound = () => {
     document.querySelector('#round-number').innerHTML = 'Final Round';
-
-    // this doesn't work!!!!
-    document.querySelectorAll('div.question').onclick = '';
 
     // highlight final question div as active
     document.querySelector('div.final-question').style.backgroundColor = '#EEA243'; // yellow
@@ -181,5 +176,14 @@ const calculateWinner = () => {
         alert('Game over. It\'s a tie!');
 
     }
+
+}
+
+
+const removeOnClick = () => {
+
+    document.querySelectorAll('.question').forEach(el => {
+        el.onclick = '';
+    })
 
 }
