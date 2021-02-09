@@ -32,7 +32,6 @@ const selectQuestion = (question) => {
     document.querySelector('.message-incorrect').style.display = 'none';
 
     // event listener on form submit to fire checkAnswer
-
     document.querySelector('.submit-answer').addEventListener('click', function(e) {
         e.preventDefault();
         checkAnswer(question);
@@ -119,7 +118,7 @@ const finalRound = () => {
 
 }
 
-// select final question - populate left display
+// select final question - populate question display
 const selectFinalQuestion = (question) => {
     console.log('selectFinalQuestion fired line 131');
 
@@ -138,7 +137,7 @@ const selectFinalQuestion = (question) => {
 
 }
 
-
+// check final answer and then switch players
 const checkFinalAnswer = (question) => {
 
     if (document.querySelector('input#' + question.correct).checked === true) {
