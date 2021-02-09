@@ -21,7 +21,7 @@ let roundNumber = 1;
 const selectQuestion = (question) => {
 
     // change color of div and text to indicate active question
-    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#EEA243';
+    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#EEA243'; // yellow
 
     // dynamically display form content based on question param
 
@@ -56,7 +56,7 @@ const checkAnswer = (question) => {
 
     switchPlayer();
 
-    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#808782';
+    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#808782'; // gray
 
     document.querySelector('#question-' + question.identifier + '-' + question.points).onclick = "";
 
@@ -107,7 +107,7 @@ const finalRound = () => {
     document.querySelectorAll('div.question').onclick = '';
 
     // highlight final question div as active
-    document.querySelector('div.final-question').style.backgroundColor = '#EEA243';
+    document.querySelector('div.final-question').style.backgroundColor = '#EEA243'; // yellow
 
     if (turnPlayer === 1) {
         // call selectFinalQuestion on player 1's final question
