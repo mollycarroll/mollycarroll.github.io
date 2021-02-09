@@ -30,6 +30,8 @@ let roundNumber = 1;
 const selectQuestion = (question) => {
     console.log('selectQuestion fired line 56');
 
+    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#f8e350';
+
     // dynamically display form content based on question param
 
     document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" class="submit-answer">Submit</button>';
@@ -51,10 +53,6 @@ const selectQuestion = (question) => {
 
 const checkAnswer = (question) => {
     console.log('checkAnswer fired line 74');
-
-    // console.log('question.correct = ' + question.correct)
-
-    // console.log(document.querySelector('input#' + question.correct));
 
     if (document.querySelector('input#' + question.correct).checked === true) {
 
@@ -85,10 +83,15 @@ const switchPlayer = () => {
 
     } else if (turnPlayer === 2) {
         turnPlayer = 1;
-        document.querySelector('#turn-player').innerHTML = 'Player 1'; 
-        roundNumber += 1;
+        document.querySelector('#turn-player').innerHTML = 'Player 1';
+        
+        if (roundNumber < 4) {
+            roundNumber += 1;
+            document.querySelector('#round-number').innerHTML = roundNumber;
 
-        document.querySelector('#round-number').innerHTML = roundNumber;
+        } else {
+            finalRound();
+        }
     }
 
 }
@@ -104,6 +107,68 @@ const addToScore = (num) => {
     } else if (turnPlayer === 2) {
         player2Score += num;
         document.querySelector('#player-2-score').innerHTML = player2Score;
+    }
+
+}
+
+// final round
+const finalRound = () => {
+    document.querySelector('#round-number').innerHTML = 'Final Round';
+    console.log('finalRound called');
+
+    // highlight final question div yellow
+    document.querySelector('div.final-question').style.backgroundColor = '#f8e350';
+
+    if (turnPlayer === 1) {
+        // call selectFinalQuestion on player 1's final question
+        selectFinalQuestion(questionBank[25]);
+    }
+
+}
+
+// select final question - populate left display
+const selectFinalQuestion = (question) => {
+    console.log('selectFinalQuestion fired line 131');
+
+    // create question form
+    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" class="submit-answer">Submit</button>';
+
+    // clear correct/incorrect message
+    document.querySelector('.message-correct').style.display = 'none';
+    document.querySelector('.message-incorrect').style.display = 'none';
+
+    // event listener on form submit to fire checkFinalAnswer
+    document.querySelector('.submit-answer').addEventListener('click', function(e) {
+        e.preventDefault();
+        checkFinalAnswer(question);
+    });
+
+}
+
+
+const checkFinalAnswer = (question) => {
+
+    if (document.querySelector('input#' + question.correct).checked === true) {
+
+        document.querySelector('.message-correct').style.display = 'block';
+
+        addToScore(parseInt(question.points));
+
+    } else if (document.querySelector('input#' + question.correct).checked === false) {
+
+        document.querySelector('.message-incorrect').style.display = 'block';
+
+    }
+
+}
+
+
+const finalSwitchPlayer = () => {
+
+    if (turnPlayer === 1) {
+        turnPlayer = 2;
+        document.querySelector('#turn-player').innerHTML = 'Player 2';
+        selectFinalQuestion(questionBank[26]);
     }
 
 }

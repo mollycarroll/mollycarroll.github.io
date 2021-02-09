@@ -15,7 +15,7 @@ let questionBank = [
         'statement': 'Harry Potter brought this type of pet to Hogwarts.',
         'option1': 'What is a snake?',
         'option2': 'What is a cat?',
-        'option3': 'What is a toad',
+        'option3': 'What is a toad?',
         'option4': 'What is an owl?',
         'points': '10',
         'identifier': 'hp',
@@ -278,5 +278,27 @@ let questionBank = [
         'identifier': 'history',
         'name': 'fifth-history',
         'correct': 'option1'
+    },
+    {
+        'statement': 'This is the default behavior in Javascript of moving all variable declarations to the top of the current scope.',
+        'option1': 'What is sorting?',
+        'option2': 'What is scoping?',
+        'option3': 'What is hoisting?',
+        'option4': 'What is refactoring?',
+        'points': '50',
+        'identifier': 'final',
+        'name': 'first-final',
+        'correct': 'option3'
+    },
+    {
+        'statement': 'This mathematician born in 1815 is considered to be the first ever computer programmer.',
+        'option1': 'Who is Michael Faraday?',
+        'option2': 'Who is Charles Babbage?',
+        'option3': 'Who is Alan Turing?',
+        'option4': 'Who is Ada Lovelace?',
+        'points': '50',
+        'identifier': 'final',
+        'name': 'second-final',
+        'correct': 'option4'
     }
 ]
