@@ -5,7 +5,7 @@ https://jeopardyquestions.com/
 
 TODO:
 
-Figure out how to remove onclick attribute from ALL question divs at Final Round
+Figure out how to remove onclick attribute from ALL question divs at Final Round - check line 107
 
 */
 
@@ -19,13 +19,13 @@ let roundNumber = 1;
 // selectQuestion fires when a user clicks a question box
 
 const selectQuestion = (question) => {
-    console.log('selectQuestion fired line 56');
 
-    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#f8e350';
+    // change color of div and text to indicate active question
+    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#EEA243';
 
     // dynamically display form content based on question param
 
-    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" class="submit-answer">Submit</button>';
+    document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><br><button type="submit" class="submit-answer">Submit</button>';
 
     // clear correct/incorrect message
     document.querySelector('.message-correct').style.display = 'none';
@@ -42,23 +42,21 @@ const selectQuestion = (question) => {
 // checkAnswer fires when a user submits the answer form, takes a question object as an argument
 
 const checkAnswer = (question) => {
-    console.log('checkAnswer fired line 74');
 
+    // if chosen answer is correct
     if (document.querySelector('input#' + question.correct).checked === true) {
-
         document.querySelector('.message-correct').style.display = 'block';
-
         addToScore(parseInt(question.points));
 
+    // if chosen answer is incorrect
     } else if (document.querySelector('input#' + question.correct).checked === false) {
-
         document.querySelector('.message-incorrect').style.display = 'block';
 
     }
 
     switchPlayer();
 
-    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#095CB0';
+    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#808782';
 
     document.querySelector('#question-' + question.identifier + '-' + question.points).onclick = "";
 
@@ -104,12 +102,12 @@ const addToScore = (num) => {
 // final round
 const finalRound = () => {
     document.querySelector('#round-number').innerHTML = 'Final Round';
-    console.log('finalRound called');
 
+    // this doesn't work!!!!
     document.querySelectorAll('div.question').onclick = '';
 
-    // highlight final question div yellow
-    document.querySelector('div.final-question').style.backgroundColor = '#f8e350';
+    // highlight final question div as active
+    document.querySelector('div.final-question').style.backgroundColor = '#EEA243';
 
     if (turnPlayer === 1) {
         // call selectFinalQuestion on player 1's final question
@@ -120,9 +118,8 @@ const finalRound = () => {
 
 // select final question - populate question display
 const selectFinalQuestion = (question) => {
-    console.log('selectFinalQuestion fired line 131');
 
-    // create question form
+    // create question form dynamically
     document.querySelector('.question-form').innerHTML = '<p>' + question.statement + '</p><br><input type="radio" id="option1" name="' + question.name + '"><label>' + question.option1 + '</label><br><input type="radio" id="option2" name="' + question.name + '"><label>' + question.option2 + '</label><br><input type="radio" id="option3" name="' + question.name + '"><label>' + question.option3 + '</label><br><input type="radio" id="option4" name="' + question.name + '"><label>' + question.option4 + '</label><br><button type="submit" class="submit-answer">Submit</button>';
 
     // clear correct/incorrect message
@@ -140,14 +137,13 @@ const selectFinalQuestion = (question) => {
 // check final answer and then switch players
 const checkFinalAnswer = (question) => {
 
+    // if answer is correct
     if (document.querySelector('input#' + question.correct).checked === true) {
-
         document.querySelector('.message-correct').style.display = 'block';
-
         addToScore(parseInt(question.points));
 
+    // if answer is incorrect
     } else if (document.querySelector('input#' + question.correct).checked === false) {
-
         document.querySelector('.message-incorrect').style.display = 'block';
 
     }
@@ -159,11 +155,13 @@ const checkFinalAnswer = (question) => {
 // switch from player 1's final question to player 2's final question
 const finalSwitchPlayer = () => {
 
+    // if player 1 just answered their final question
     if (turnPlayer === 1) {
         turnPlayer = 2;
         document.querySelector('#turn-player').innerHTML = 'Player 2';
         selectFinalQuestion(questionBank[26]);
 
+    // if player 2 has already answered their final question
     } else {
         calculateWinner();
     }

@@ -1,25 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Roboto&display=swap');
 
 /* Main grid styling */
 
 h1 {
     text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
 }
 
-.left-display {
-    border: 1px solid black;
-    padding: 1%;
-    width: 30%;
-    margin: 10px;
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+p, form {
+    font-family: 'Roboto', sans-serif;
+}
+
+.points {
+    color: #FFFFFF;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .question-display {
     display: flex;
     justify-content: center;
+    padding-bottom: 2%;
+    margin: 10px;
+    background-color: #488286;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .status {
     display: flex;
     justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #A6D3A0;
+    margin: 10px;
 }
 
 .row {
@@ -28,14 +51,23 @@ h1 {
 
 .one-category, .question, .final-question {
     border: 1px solid black;
+    border-radius: 10px;
     width: 100%;
     text-align: center;
+    margin: 2px;
+    background-color: #003B6F;
 }
 
 .scoreboard {
     justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #A6D3A0;
+    margin: 10px;
 }
 
 .message-correct, .message-incorrect {
     display: none;
+    color: #000000;
+    text-align: center;
 }
