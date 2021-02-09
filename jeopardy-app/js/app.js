@@ -1,10 +1,5 @@
-/*
 
-TODO:
-
-Figure out how to remove onclick attribute from ALL question divs at Final Round - check line 107
-
-*/
+// generic variables for storing info
 
 let player1Score = 0;
 let player2Score = 0;
