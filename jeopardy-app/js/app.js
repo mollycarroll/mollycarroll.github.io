@@ -1,4 +1,4 @@
-// TODO: make more mobile responsive with breakpoints in CSS
+
 
 // generic variables for storing info
 
@@ -175,11 +175,20 @@ const calculateWinner = () => {
 
 }
 
-
+// remove click event listener property from all question boxes
 const removeOnClick = () => {
 
     document.querySelectorAll('.question').forEach(el => {
         el.onclick = '';
     })
+
+}
+
+
+// TODO: make mobile responsive using JS to generate different HTML based on screen size
+
+if (window.innerWidth < 530) {
+    
+    document.querySelector('div.main-display').innerHTML = '<div class="status row"><div class="turn"><h2>Turn:</h2><h2 id="turn-player">Player 1</h2></div><div class="round"><h2>Round:</h2><h2 id="round-number">1</h2></div></div><div class="row"><div class="one-category" id="astro-category"><h3>Astronomy</h3></div></div><div class="row"><div class="question astro" id="question-astro-10" onclick="selectQuestion(questionBank[0])"><h2 class="points">10</h2></div><div class="question astro" id="question-astro-20" onclick="selectQuestion(questionBank[5])"><h2 class="points">20</h2></div><div class="question astro" id="question-astro-30" onclick="selectQuestion(questionBank[10])"><h2 class="points">30</h2></div><div class="question astro" id="question-astro-40" onclick="selectQuestion(questionBank[15])"><h2 class="points">40</h2></div><div class="question astro" id="question-astro-50" onclick="selectQuestion(questionBank[20])"><h2 class="points">50</h2></div></div><div class="row"><div class="one-category" id="hp-category"><h3>Harry Potter</h3></div></div><div class="row"><div class="question harry-potter" id="question-hp-10" onclick="selectQuestion(questionBank[1])"><h2 class="points">10</h2></div><div class="question" id="question-hp-20" onclick="selectQuestion(questionBank[6])"><h2 class="points">20</h2></div><div class="question" id="question-hp-30" onclick="selectQuestion(questionBank[11])"><h2 class="points">30</h2></div><div class="question" id="question-hp-40" onclick="selectQuestion(questionBank[16])"><h2 class="points">40</h2></div><div class="question" id="question-hp-50" onclick="selectQuestion(questionBank[21])"><h2 class="points">50</h2></div></div><div class="row"><div class="one-category" id="geo-category"><h3>Geography</h3></div></div><div class="row"><div class="question geo" id="question-geo-10" onclick="selectQuestion(questionBank[2])"><h2 class="points">10</h2></div><div class="question" id="question-geo-20" onclick="selectQuestion(questionBank[7])"><h2 class="points">20</h2></div><div class="question" id="question-geo-30" onclick="selectQuestion(questionBank[12])"><h2 class="points">30</h2></div><div class="question" id="question-geo-40" onclick="selectQuestion(questionBank[17])"><h2 class="points">40</h2></div><div class="question" id="question-geo-50" onclick="selectQuestion(questionBank[22])"><h2 class="points">50</h2></div></div><div class="row"><div class="one-category" id="sw-category"><h3>Star Wars</h3></div></div><div class="row"><div class="question star-wars" id="question-sw-10" onclick="selectQuestion(questionBank[3])"><h2 class="points">10</h2></div><div class="question" id="question-sw-20" onclick="selectQuestion(questionBank[8])"><h2 class="points">20</h2></div><div class="question" id="question-sw-30" onclick="selectQuestion(questionBank[13])"><h2 class="points">30</h2></div><div class="question" id="question-sw-40" onclick="selectQuestion(questionBank[18])"><h2 class="points">40</h2></div><div class="question" id="question-sw-50" onclick="selectQuestion(questionBank[23])"><h2 class="points">50</h2></div></div><div class="row"><div class="one-category" id="history-category"><h3>History</h3></div></div><div class="row"><div class="question history" id="question-history-10" onclick="selectQuestion(questionBank[4])"><h2 class="points">10</h2></div><div class="question" id="question-history-20" onclick="selectQuestion(questionBank[9])"><h2 class="points">20</h2></div><div class="question" id="question-history-30" onclick="selectQuestion(questionBank[14])"><h2 class="points">30</h2></div><div class="question" id="question-history-40" onclick="selectQuestion(questionBank[19])"><h2 class="points">40</h2></div><div class="question" id="question-history-50" onclick="selectQuestion(questionBank[24])"><h2 class="points">50</h2></div></div><div class="final row"><div class="final-question"><h3>Final Question</h3></div></div><div class="scoreboard row"><div class="player-score"><h2 class="score-text">Player 1 Score:</h2><h2 class="score-number" id="player-1-score">0</h2></div><div class="player-score"><h2 class="score-text">Player 2 Score:</h2><h2 class="score-number" id="player-2-score">0</h2></div></div>'
 
 }

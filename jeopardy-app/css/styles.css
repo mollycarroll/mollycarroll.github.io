@@ -70,19 +70,3 @@ p, form {
     color: #000000;
     text-align: center;
 }
-
-/* Mobile responsive CSS */
-
-/* @media screen and (max-width: 531px) {
-    .category {
-        display: block;
-    }
-    div.one-category#astro-category {
-        order: 1;
-        background-color: darkmagenta;
-    }
-    div.astro.question {
-        order: 2;
-    }
-
-} */

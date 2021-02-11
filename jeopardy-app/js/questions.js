@@ -280,7 +280,7 @@ let questionBank = [
         'correct': 'option1'
     },
     {
-        'statement': 'This is the default behavior in Javascript of moving all variable declarations to the top of the current scope.',
+        'statement': 'Final question: This is the default behavior in Javascript of moving all variable declarations to the top of the current scope.',
         'option1': 'What is sorting?',
         'option2': 'What is scoping?',
         'option3': 'What is hoisting?',
@@ -291,7 +291,7 @@ let questionBank = [
         'correct': 'option3'
     },
     {
-        'statement': 'This mathematician born in 1815 is considered to be the first ever computer programmer.',
+        'statement': 'Final question: This mathematician born in 1815 is considered to be the first ever computer programmer.',
         'option1': 'Who is Michael Faraday?',
         'option2': 'Who is Charles Babbage?',
         'option3': 'Who is Alan Turing?',
