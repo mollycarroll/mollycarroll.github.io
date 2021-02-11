@@ -185,7 +185,7 @@ const removeOnClick = () => {
 }
 
 
-// TODO: make mobile responsive using JS to generate different HTML based on screen size
+// conditional to render mobile friendly HTML for small screen sizes
 
 if (window.innerWidth < 530) {
     
