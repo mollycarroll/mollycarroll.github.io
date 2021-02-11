@@ -18,6 +18,9 @@ h3 {
 
 p, form {
     font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .points {
@@ -30,15 +33,13 @@ p, form {
     justify-content: center;
     padding-bottom: 2%;
     margin: 10px;
-    background-color: #488286;
-    border: 1px solid black;
+    background-color: #2B4D50;
     border-radius: 10px;
 }
 
 .status {
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
     border-radius: 10px;
     background-color: #A6D3A0;
     margin: 10px;
@@ -49,7 +50,6 @@ p, form {
 }
 
 .one-category, .question, .final-question {
-    border: 1px solid black;
     border-radius: 10px;
     width: 100%;
     text-align: center;
@@ -59,7 +59,6 @@ p, form {
 
 .scoreboard {
     justify-content: space-around;
-    border: 1px solid black;
     border-radius: 10px;
     background-color: #A6D3A0;
     margin: 10px;
