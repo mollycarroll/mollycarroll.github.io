@@ -1,3 +1,3 @@
 Housing ongoing portfolio projects. Currently: interactive Jeopardy game. 
 
-Visit the Jeopardy game at: https://mollycarroll.github.io/jeopardy-app/
+Visit the Jeopardy game [here](https://mollycarroll.github.io/jeopardy-app/) 
