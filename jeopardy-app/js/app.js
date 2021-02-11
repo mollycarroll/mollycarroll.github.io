@@ -13,8 +13,17 @@ let roundNumber = 1;
 
 const selectQuestion = (question) => {
 
-    // change color of div and text to indicate active question
-    document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#EEA243'; // yellow
+    // change color of div to indicate active question
+    if (document.querySelector('#question-' + question.identifier + '-' + question.points).classList.contains('selected')) {
+
+        document.querySelector('#question-' + question.identifier + '-' + question.points).classList.remove('selected');
+
+    } else {
+
+        document.querySelector('#question-' + question.identifier + '-' + question.points).classList.add('selected');
+    }
+
+    checkSecondSelect();
 
     // dynamically display form content based on question param
 
@@ -51,7 +60,7 @@ const checkAnswer = (question) => {
 
     document.querySelector('#question-' + question.identifier + '-' + question.points).style.backgroundColor = '#808782'; // gray
 
-    document.querySelector('#question-' + question.identifier + '-' + question.points).onclick = "";
+    document.querySelector('#question-' + question.identifier + '-' + question.points).onclick = '';
 
 }
 
@@ -182,6 +191,15 @@ const removeOnClick = () => {
         el.onclick = '';
     })
 
+}
+
+// checks if another question div was selected before answering the first selected question
+const checkSecondSelect = () => {
+
+    if (document.querySelectorAll('.question.selected').length > 1) {
+        document.querySelectorAll('.question.selected')[0].classList.remove('selected');
+    }
+    
 }
 
 
