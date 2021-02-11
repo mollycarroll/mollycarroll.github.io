@@ -1,3 +1,4 @@
+// TODO: make more mobile responsive with breakpoints in CSS
 
 // generic variables for storing info
 

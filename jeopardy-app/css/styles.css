@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Roboto&display=swap');
 
-/* Main grid styling */
-
 h1 {
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
@@ -72,3 +70,19 @@ p, form {
     color: #000000;
     text-align: center;
 }
+
+/* Mobile responsive CSS */
+
+/* @media screen and (max-width: 531px) {
+    .category {
+        display: block;
+    }
+    div.one-category#astro-category {
+        order: 1;
+        background-color: darkmagenta;
+    }
+    div.astro.question {
+        order: 2;
+    }
+
+} */
