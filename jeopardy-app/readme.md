@@ -1,6 +1,6 @@
 # Jeopardy!
 
-This is an interactive browser Jeopardy game with two players. Play the game here: https://mollycarroll.github.io/jeopardy-app/
+This is an interactive browser Jeopardy game with two players. Play the game [here](https://mollycarroll.github.io/jeopardy-app/)!
 
 ## Gameplay
 
