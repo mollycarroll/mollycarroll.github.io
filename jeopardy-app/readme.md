@@ -12,6 +12,14 @@ After four rounds, the game will go to the Final Round, giving each player a fin
 
 Javascript, HTML, CSS
 
+## Features
+
+* Two players
+* Score, turn and round display
+* Game win and lose conditions
+* Moblie-friendly version
+
 ## Future possible improvements
 
-Add a second level of questions with different categories after the Final Round that are worth more points
+* Add a second level of questions with different categories after the Final Round that are worth more points
+* Customizations for Player 1 and Player 2 (avatars, names etc.)
