@@ -22,6 +22,11 @@ p, form {
     line-height: 1.5;
 }
 
+h4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
 .points {
     color: #FFFFFF;
     font-family: 'Rajdhani', sans-serif;

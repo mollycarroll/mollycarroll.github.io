@@ -1,5 +1,3 @@
-
-
 // generic variables for storing info
 
 let player1Score = 0;
