@@ -1,1 +1,25 @@
-/* Empty css file that users can override in their own /assets/css/custom.css file */
+/* Overrides any definitions in any other included stylesheets */
+
+html {
+    font-family: 'Inconsolata', serif;
+}
+
+.sidebar {
+    text-align: left;
+    padding: 1rem;
+}
+
+.sidebar-about {
+    text-align: left;
+}
+
+.sidebar-about p.lead {
+   font-size: 1em;
+   text-align: left;
+}
+
+.sidebar-about h1 {
+    font-family: 'Odibee Sans Regular';
+    font-size: 2.5em;
+}
+
