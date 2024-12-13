@@ -49,14 +49,22 @@ enableRobotsTXT = true
     # Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss
     rss_section = "posts"
 
+    # #515151 = #5DAC8E (dark) /  #498E74 (light)
+    # #909090 = #91B391
+    # #268BD2 = #eb6bab
+
+
     # Hex colors for your sidebar.
-    moon_sun_background_color = "#498E74"   # default is #515151
-    moon_sun_color = "#FFF"                 # default is #FFF
+    sidebar_bg_color = "#13231D" #13231D  # default is #202020
+    moon_sun_background_color = "#5DAC8E" #5DAC8E  # default is #515151
+    moon_sun_color = "#000"                 # default is #FFF
+
     sidebar_a_color = "#FFF"                # default is #FFF
-    sidebar_bg_color = "#13231D"            # default is #202020
     sidebar_h1_color = "#FFF"               # default is #FFF
-    sidebar_img_border_color = "#498E74"    # default is #515151
-    sidebar_p_color = "#91B391"             # default is #909090
+    sidebar_p_color = "#91B391" #91B391    # default is #909090
+
+    sidebar_img_border_color = "#5DAC8E" #5DAC8E    # default is #515151
+
     sidebar_socials_color = "#FFF"          # default is #FFF
 
     # Hex colors for your content in light mode.
@@ -64,11 +72,13 @@ enableRobotsTXT = true
     code_background_color = "#E5E5E5"       # default is #E5E5E5
     code_block_color = "#FFF"               # default is #FFF
     code_block_background_color = "#272822" # default is #272822
-    content_bg_color = "#FFF"            # default is #FAF9F6
+
+    content_bg_color = "#F4F4F4" #F4F4F4   # default is #FAF9F6
     date_color = "#498E74" #498E74      # default is #515151
     link_color = "#eb6bab" #eb6bab       # default is #268BD2
-    list_color = "#5A5A5A"                  # default is #5A5A5A
+    list_color = "#60435F" # #60435F  TESTING!       # default is #5A5A5A
     post_title_color = "#303030"            # default is #303030
+
     table_border_color = "#E5E5E5"          # default is #E5E5E5
     table_stripe_color = "#F9F9F9"          # default is #F9F9F9
     text_color = "#222"                     # default is #222
@@ -78,29 +88,35 @@ enableRobotsTXT = true
     code_background_color_dark = "#498E74"          # default is #515151
     code_block_color_dark = "#FFF"                  # default is #FFF
     code_block_background_color_dark = "#272822"    # default is #272822
-    content_bg_color_dark = "#000000"               # default is #121212
-    date_color_dark = "#00A86B" #00A86B           # default is #9A9A9A
+
+    content_bg_color_dark = "#121212"               # default is #121212
+    date_color_dark = "#91B391" #91B391           # default is #9A9A9A
     link_color_dark = "#eb6bab" #eb6bab           # default is #268BD2
-    list_color_dark = "#9D9D9D"                     # default is #9D9D9D
-    post_title_color_dark = "#DBE2E9"               # default is #DBE2E9
+    
+    list_color_dark = "#60435F"#  #60435F TESTING!  # default is #9D9D9D
+
+    post_title_color_dark = "#F4F4F4" #F4F4F4    # default is #DBE2E9
+    
     table_border_color_dark = "#498E74" #498E74   # default is #515151
     table_stripe_color_dark = "#13231D"             # default is #202020
     text_color_dark = "#EEE"                        # default is #EEE
-
-    # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
-    # remark42 = true
-    # remark42_host = "https://yourhost.com"
-    # remark42_site_id = "your_site_id"
-    
-    # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
-    # og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
-                                          # this is also used in the schema output as well. Image is resized to max 1200x630
-                                          # For this to work though og_image and brand_url must be a path inside the assets directory
-                                          # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
-    # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
 [taxonomies]
     tags = "tags"
     category = "categories"
     series = "series"
     tech_stack = "tech_stack"
+
+# NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
+# og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
+                                          # this is also used in the schema output as well. Image is resized to max 1200x630
+                                          # For this to work though og_image and brand_url must be a path inside the assets directory
+                                          # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
+ # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
+
+
+    # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
+    # remark42 = true
+    # remark42_host = "https://yourhost.com"
+    # remark42_site_id = "your_site_id"
+    
