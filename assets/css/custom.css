@@ -1,7 +1,7 @@
 /* Overrides any definitions in any other included stylesheets */
 
 html {
-    font-family: 'Inconsolata', serif;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 .sidebar {

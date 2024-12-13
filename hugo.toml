@@ -14,7 +14,7 @@ enableRobotsTXT = true
     front_page_content = ["posts", "projects", "about"]
 
     brand = "Molly Carroll"
-    # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
+    # brand_image = "/images/brand_image.png"    # path to the image shown in the sidebar
     description = "testing 1234" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
