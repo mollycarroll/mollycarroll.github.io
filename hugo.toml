@@ -11,7 +11,7 @@ enableRobotsTXT = true
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    front_page_content = ["about", "posts"]
+    front_page_content = ["posts", "projects"]
 
     brand = "Molly A. Carroll"
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
@@ -30,7 +30,8 @@ enableRobotsTXT = true
     # TODO: revise menu config
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 5},
+        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 5},
     ]
 
     # Links to your socials.  Comment or delete any you don"t need/use. 
@@ -99,5 +100,7 @@ enableRobotsTXT = true
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
 [taxonomies]
-    series = "series"
     tags = "tags"
+    category = "categories"
+    series = "series"
+    tech_stack = "tech_stack"

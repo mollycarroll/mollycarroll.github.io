@@ -4,4 +4,4 @@ draft = false
 title = 'About Molly'
 +++
 
-Molly is a really lost space alien attempting to do the human thing.
+Molly is a confused, homeless space alien attempting to do the human thing.
