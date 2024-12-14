@@ -11,12 +11,12 @@ enableRobotsTXT = true
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    front_page_content = ["posts", "projects", "about"]
+    front_page_content = ["projects"]
 
     brand = "Molly Carroll"
     # brand_image = "/images/brand_image.png"    # path to the image shown in the sidebar
-    description = "testing 1234" # Used as default meta description if not specified in front matter
-    dark_mode = true                      # optional - defaults to false
+    description = "software engineer, architect & AI/ML [yes]" # Used as default meta description if not specified in front matter
+    dark_mode = false                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     hideToc = true
 
@@ -30,7 +30,6 @@ enableRobotsTXT = true
     # TODO: revise menu config
     menu = [
         {Name = "About", URL = "/about/", HasChildren = true, Limit = 4},
-        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 4},
         {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 4},
     ]
 
