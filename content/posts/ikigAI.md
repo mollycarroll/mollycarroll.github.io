@@ -1,6 +1,6 @@
 +++
 date = "2024-12-13T00:12:07-07:00"
-draft = false
+draft = true
 title = 'IkigAI'
 category = "career"
 summary = ""
