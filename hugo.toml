@@ -48,57 +48,54 @@ enableRobotsTXT = true
     # Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss
     rss_section = "posts"
 
-    # #515151 = #5DAC8E (dark) /  #498E74 (light)
-    # #909090 = #91B391
-    # #268BD2 = #eb6bab
-
-
     # Hex colors for your sidebar.
-    sidebar_bg_color = "#13231D" #13231D  # default is #202020
-    moon_sun_background_color = "#5DAC8E" #5DAC8E  # default is #515151
-    moon_sun_color = "#000"                 # default is #FFF
+    sidebar_bg_color = "#060408" 
+    moon_sun_background_color = "#57db7c" 
+    moon_sun_color = "#000"                  
 
-    sidebar_a_color = "#FFF"                # default is #FFF
-    sidebar_h1_color = "#FFF"               # default is #FFF
-    sidebar_p_color = "#91B391" #91B391    # default is #909090
+    sidebar_a_color = "#ffffff"                 
+    sidebar_h1_color = "#ffffff"                
+    sidebar_p_color = "#57db7c"        
 
-    sidebar_img_border_color = "#5DAC8E" #5DAC8E    # default is #515151
+    sidebar_img_border_color = "#57db7c" 
 
-    sidebar_socials_color = "#FFF"          # default is #FFF
+    sidebar_socials_color = "#eb6bab" 
 
-    # Hex colors for your content in light mode.
-    code_color = "#000"                     # default is #000
-    code_background_color = "#E5E5E5"       # default is #E5E5E5
-    code_block_color = "#FFF"               # default is #FFF
-    code_block_background_color = "#272822" # default is #272822
+    # LIGHT MODE COLORS
 
-    content_bg_color = "#F4F4F4" #F4F4F4   # default is #FAF9F6
-    date_color = "#498E74" #498E74      # default is #515151
-    link_color = "#eb6bab" #eb6bab       # default is #268BD2
-    list_color = "#60435F" # #60435F  TESTING!       # default is #5A5A5A
-    post_title_color = "#303030"            # default is #303030
+    code_color = "#000"                      
+    code_background_color = "#E5E5E5"       
+    code_block_color = "#FFF"                
+    code_block_background_color = "#272822"  
 
-    table_border_color = "#E5E5E5"          # default is #E5E5E5
-    table_stripe_color = "#F9F9F9"          # default is #F9F9F9
-    text_color = "#222"                     # default is #222
+    content_bg_color = "#F3F4F3"
+    date_color = "#498E74" #498E74       
+    link_color = "#eb6bab" 
+    list_color = "#60435F" # #60435F  TESTING!
+    post_title_color = "#303030"
 
-    # Hex colors for your content in dark mode
-    code_color_dark = "#FFF"                        # default is #FFF
-    code_background_color_dark = "#498E74"          # default is #515151
-    code_block_color_dark = "#FFF"                  # default is #FFF
-    code_block_background_color_dark = "#272822"    # default is #272822
+    table_border_color = "#E5E5E5"          
+    table_stripe_color = "#F9F9F9" 
+    text_color = "#222" 
 
-    content_bg_color_dark = "#121212"               # default is #121212
-    date_color_dark = "#91B391" #91B391           # default is #9A9A9A
-    link_color_dark = "#eb6bab" #eb6bab           # default is #268BD2
+    # DARK MODE COLORS
+
+    code_color_dark = "#FFF"                         
+    code_background_color_dark = "#498E74"           
+    code_block_color_dark = "#FFF"                   
+    code_block_background_color_dark = "#272822"     
+
+    content_bg_color_dark = "#121212"                #121212
+    date_color_dark = "#57db7c"           
+    link_color_dark = "#eb6bab"
     
-    list_color_dark = "#60435F"#  #60435F TESTING!  # default is #9D9D9D
+    list_color_dark = "#F4F1BB"#   TESTING!   #9D9D9D
 
-    post_title_color_dark = "#F4F4F4" #F4F4F4    # default is #DBE2E9
+    post_title_color_dark = "#F3F4F3"   
     
-    table_border_color_dark = "#498E74" #498E74   # default is #515151
-    table_stripe_color_dark = "#13231D"             # default is #202020
-    text_color_dark = "#EEE"                        # default is #EEE
+    table_border_color_dark = "#57db7c"     
+    table_stripe_color_dark = "#13231D"             
+    text_color_dark = "#EEE"                        
 
 [taxonomies]
     tags = "tags"
