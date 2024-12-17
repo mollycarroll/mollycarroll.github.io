@@ -15,7 +15,7 @@ enableRobotsTXT = true
 
     brand = "Molly Carroll"
     # brand_image = "/images/brand_image.png"    # path to the image shown in the sidebar
-    description = "AI/ML ✦ full stack developer ✦ software architect ✦ cloud computing" # Used as default meta description if not specified in front matter
+    description = '' # Used as default meta description if not specified in front matter
     dark_mode = false                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     hideToc = true

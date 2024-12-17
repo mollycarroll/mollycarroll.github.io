@@ -4,23 +4,14 @@ html {
     font-family: 'Inconsolata', sans-serif;
 }
 
-/* TODO fix this later */
-/* @counter-style four-point-star {
-    system: cyclic,
-    symbol: "\2726";
-} */
+/* padding order: Top Right Bottom Left */
 
 .sidebar {
     text-align: left;
-    padding: 1rem;
 }
 
 .sidebar-about {
     text-align: left;
-}
-
-.sidebar-about p.lead {
-   text-align: left;
 }
 
 .sidebar-about h1 {
@@ -28,3 +19,8 @@ html {
     font-size: 2.25em;
 }
 
+.sidebar-about p.lead {
+    text-align: left;
+    font-family: 'Odibee Sans Regular';
+    font-size: 1.6rem;
+}
