@@ -4,4 +4,4 @@ draft = true
 title = "About"
 +++
 
-Placeholder text. Index page for About section
+[WIP] welcome to my lair
