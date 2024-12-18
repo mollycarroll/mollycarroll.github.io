@@ -11,14 +11,14 @@ enableRobotsTXT = true
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    front_page_content = ["projects"]
+    front_page_content = ["about"]
 
     brand = "Molly Carroll"
     # brand_image = "/images/brand_image.png"    # path to the image shown in the sidebar
     description = '' # Used as default meta description if not specified in front matter
     dark_mode = false                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
-    hideToc = true
+    hideToc = false
 
     # MENU PLACEHOLDER
     # Menu dict keys:
@@ -29,8 +29,8 @@ enableRobotsTXT = true
 
     # TODO: revise menu config
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = true, Limit = 4},
-        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 4},
+        {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
+        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3},
     ]
 
     # Links to your socials.  Comment or delete any you don"t need/use. 

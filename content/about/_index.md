@@ -4,4 +4,3 @@ draft = true
 title = "About"
 +++
 
-[WIP] welcome to my lair
