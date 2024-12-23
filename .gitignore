@@ -2,3 +2,4 @@
 public/
 static/
 tmp/
+.DS_Store

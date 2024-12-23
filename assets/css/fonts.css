@@ -115,21 +115,12 @@
     url('/fonts/inconsolata-regular.woff') format('woff')
 }
 
-/* jacques francois shadow */
-@font-face {
-  font-family: 'Jacques Francois Shadow';
-  font-weight: 400;
-  font-style: normal;
-  src: local('') url('/fonts/jacques-francois-shadow-regular.woff2') format('woff2'),
-    url('/fonts/jacques-francois-shadow-regular.woff') format('woff')
-}
-
 /* odibee sans */
 @font-face {
   font-family: 'Odibee Sans Regular';
   font-weight: 400;
   font-style: normal;
   src: local()
-    url('/fonts/odibee-sans-regular-400.woff2') format('woff2'),
-    url('/fonts/odibee-sans-regular-400.woff') format('woff')
+    url('/fonts/odibee-sans-regular.woff2') format('woff2'),
+    url('/fonts/odibee-sans-regular.woff') format('woff')
 }
