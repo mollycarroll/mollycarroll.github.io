@@ -2,7 +2,7 @@
 
 # The root configuration keys are: [build, caches, cascade, deployment, frontmatter, imaging, languages, markup, mediatypes, menus, minify, module, outputformats, outputs, params, permalinks, privacy, related, security, segments, server, services, sitemap, and taxonomies]
 
-baseURL = "/"
+baseURL = "https://mollycarroll.github.io/"
 languageCode = "en-us"
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 enableRobotsTXT = true
