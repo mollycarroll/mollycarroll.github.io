@@ -1,5 +1,4 @@
 .hugo_build.lock
 public/
-static/
 tmp/
 .DS_Store

@@ -121,6 +121,6 @@
   font-weight: 400;
   font-style: normal;
   src: local()
-    url('/fonts/odibee-sans-regular.woff2') format('woff2'),
-    url('/fonts/odibee-sans-regular.woff') format('woff')
+    url('/fonts/odibee-sans-regular-400.woff2') format('woff2'),
+    url('/fonts/odibee-sans-regular-400.woff') format('woff')
 }
