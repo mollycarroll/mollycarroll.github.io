@@ -73,7 +73,7 @@ pre {
     text-align: left;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: rgb(70, 70, 70) auto;
+    scrollbar-color: auto;
   }
   
   ::-webkit-scrollbar {
@@ -110,14 +110,12 @@ pre {
   color: var(--sidebar-h1-color);
   margin-top: 0;
   font-weight:300;
-  font-size: 1.5em;
-  font-family: "Abril Fatface", serif;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   padding-left: 0;
   list-style: none;
 }
@@ -165,7 +163,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    max-width: auto;
     margin-left: 2rem;
     margin-right: 1.75rem;
   }

@@ -4,10 +4,47 @@ html {
     font-family: 'Inconsolata', sans-serif;
 }
 
-/* padding order: Top Right Bottom Left */
+
+/* MQ for desktop screens */
+@media (min-width: 48em) {
+    .sidebar {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 18rem;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: auto;
+      }
+
+      ::-webkit-scrollbar {
+        width: 7px;
+      }
+    
+      ::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        background-color:#ff84e8;
+        border-radius: 10px;
+      }
+    
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color:#ffa9e7;
+      }
+}
 
 .sidebar {
     text-align: left;
+}
+
+.sidebar h1 {
+    line-height: 1em;
+    font-family: 'Odibee Sans Regular';
+    font-size: 2.5em;
 }
 
 .sidebar a:hover {
@@ -25,18 +62,9 @@ html {
     text-decoration-color: #eb6bab;
 }
 
-.sidebar-about h1 {
-    font-family: 'Odibee Sans Regular';
-    font-size: 2.4em;
-}
-
-.sidebar-about li.lead {
-    text-decoration: underline;
-    text-decoration-color: #eb6bab;
-}
 .sidebar-about p.lead {
     text-align: left;
     font-family: 'Odibee Sans Regular';
     font-size: 1.8rem;
-    letter-spacing: .09rem
+    letter-spacing: .07em
 }
