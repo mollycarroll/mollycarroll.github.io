@@ -1,6 +1,6 @@
 +++
 date = "2024-11-13T00:02:36-07:00"
-draft = false
+draft = true
 title = 'PromptCamp: AI Training at Thoughtworks'
 description = "Fun at PromptCamp - WIP"
 keywords = ["AI", "artificial intelligence", "technical training", "AI SME"]

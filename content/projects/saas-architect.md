@@ -1,6 +1,6 @@
 +++
 date = "2024-11-03T00:02:08-07:00"
-draft = false
+draft = true
 title = 'Backend + Architectural Leadership @ Startup'
 description = "Architecture nerdery - WIP"
 keywords = []

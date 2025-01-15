@@ -1,6 +1,6 @@
 +++
 date = "2024-12-04T06:37:03-07:00"
-draft = false
+draft = true
 title = 'Mad Sci AI'
 +++
 
