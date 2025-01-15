@@ -1,4 +1,4 @@
-baseURL = "https://mollycarroll.github.io/"
+baseURL = "https://mollycarroll.dev/"
 languageCode = "en-us"
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 enableRobotsTXT = true
@@ -9,7 +9,7 @@ enableRobotsTXT = true
 [params]
     front_page_content = ["about"]
 
-    brand = "Molly Carroll"
+    brand = "Molly Carroll: software engineer + inventor of AI things"
     # brand_image = "assets/images/bonsai.png"    # path to the image shown in the sidebar #TODO figure out how images work in hugo
     description = 'senior engineer, software architect, improv comedian, building AI/ML for the future' # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
@@ -26,11 +26,9 @@ enableRobotsTXT = true
     # TODO: revise menu config
     menu = [
         {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 4},
         {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3},
     ]
-
-
-
 
 
     # Links to your socials.  Comment or delete any you don"t need/use. 
