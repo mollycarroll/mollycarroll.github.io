@@ -9,9 +9,9 @@ enableRobotsTXT = true
 [params]
     front_page_content = ["about"]
 
-    brand = "Molly Carroll: software engineer + inventor of AI things"
+    brand = "Molly Carroll"
     # brand_image = "assets/images/bonsai.png"    # path to the image shown in the sidebar #TODO figure out how images work in hugo
-    description = 'senior engineer, software architect, improv comedian, building AI/ML for the future' # Used as default meta description if not specified in front matter
+    description = 'senior software engineer, software architect, improv comedian, building AI/ML for the future' # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     hideToc = false

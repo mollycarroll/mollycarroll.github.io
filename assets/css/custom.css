@@ -47,7 +47,7 @@ html {
     font-size: 2.5em;
 }
 
-.sidebar a:hover {
+.sidebar h1 a:hover {
     text-decoration: underline;
     text-decoration-color: #eb6bab;
 }
@@ -55,16 +55,18 @@ html {
 .sidebar-about {
     text-align: left;
     text-decoration: none;
+    font-family: 'Odibee Sans Regular';
 }
 
-.sidebar-about a:hover {
-    text-decoration: underline;
-    text-decoration-color: #eb6bab;
+.sidebar-about h1 {
+    text-align: left;
+    font-size: 2em;
+    letter-spacing: .07em
 }
 
 .sidebar-about p.lead {
-    text-align: left;
-    font-family: 'Odibee Sans Regular';
-    font-size: 1.8rem;
-    letter-spacing: .07em
+  text-align: left;
+  font-family: 'Odibee Sans Regular';
+  font-size: 1.8rem;
+  letter-spacing: .07em
 }
