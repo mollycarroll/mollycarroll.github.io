@@ -28,4 +28,6 @@
 <script defer data-domain="{{ .Site.Params.plausible_domain }}" src="{{ .Site.Params.plausible_script }}"></script>
 {{ end }}
 
-{{ template "_internal/google_analytics.html" . -}}
+{{ if hugo.IsProduction -}}
+  {{ template "_internal/google_analytics.html" . -}}
+{{ end -}}
