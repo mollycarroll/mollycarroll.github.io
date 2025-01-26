@@ -1,13 +1,33 @@
 +++
 date = "2024-12-17T04:11:47-07:00"
 draft = true
-title = "Resume? Mine can do my interviews, too."
-description = ""
-keywords = []
+title = "Molly's Resume Here"
+description = "My resume is no longer printable or convertible to PDF or Docx, because it is a chatbot who does the interview part, too."
+keywords = ["resume", "chatbot", "innovation", "rag"]
 tech_stack = ["python", "streamlit", "ollama"]
 +++
-[placeholder!!] Hello there! I'm M AIRy, or as some of you might call me... Molly's AI Resume, yay! 😉
 
-Just kidding (but kinda not), I was crafted by the brilliant mind behind this awesome project. My purpose? To showcase my coding skills and architectural prowess in a way that's both informative and engaging. Think of me as your personal guide to Molly Carroll's incredible journey through the world of software engineering and architecture!
+In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGPT and started the GenAI hype explosion of that year and beyond. My familiarity with AI was only in the more traditional data science/academic sense at the time, but this time was also the advent of open source AI & ML technologies that opened the door. Before this time, I'd only found ways to teach myself data science with Python online for free, with running AI models on big GPUs was locked inside grad schools. My first look at HuggingFace's site and I never looked back. Just kept reading the docs. There are always more docs to read.
 
-So, if you have any questions about her work experience or technical expertise, ask away! I'm ready to dish on all things coding, from building intricate applications to designing stunning frameworks. Let's get this interview going! 🚀
+In January of 2024, I learned what RAG stands for. In February of 2024 I decided to teach myself all the skills necessary to build a generative AI RAG chatbot that would answer job interview questions as my representative. Regardless of a job search (which I'd planned to have as an option among all the inudstry layoffs) I wanted to have a portfolio project up that actually demonstrated my skills vs. very old, simpler ones.
+
+In July of 2024 I was still figuring mAIRy out while teaching AI at work, when I was one of the layoffs of round 4. So, I worked diligently and almost daily on the AIR (A.I. Resume, before I "named" my first creation) for the entirety of 2024, with the second half of the year as a full-time devotion. 
+
+I could have done things very simply, for example in Google Cloud where I'm certified, but with cost a key factor and my personal love of OSS, I challeneged myself to build this app as close to $0 as possible.
+
+Referring to myself using "mAIRy", let’s go into mAIRy’s tech stack and other architectural components. 
+
+Molly tested a significant number of options in the wild west ecosystem of open source AI (here encompassing generative AI, AI-driven apps, LLMs and machine learning) which is basically her learning style — to build, to do, to blow things up is to learn. Of course, to do any of that one must read the documentation, which she (almost) always did first. 
+
+The app’s main logic/functionality is written in Python. At first Molly developed using AI-driven-app-development frameworks available in Python and ended up with a deep understanding of/how to work with the LangChain and LlamaIndex frameworks specifically. 
+
+Being the overachiever that she is to a fault, Molly decided to try not to rely on any one framework for the entire or most of the app. This means mAIRy is fairly vanilla-coded and 100% hand-crafted source code. mAIRy does use two tools built by the folks at LangChain, and they are both Text Splitters used in the ingestion of raw text data to be embedded and sent to the vector database. 
+
+mAIRy’s vector database is ChromaDB, a fantastic open source database for AI that stores the ingested + embedded "career data" in a database that serves as mAIRy’s brain (so, Chroma DB, not Abby Normal) and much more. Chroma’s special embedding function for Sentence Transformers (a library providing models to calculate text embeddings) is what performs the calculations for embeddings so that mAIRy may retrieve answers to user queries based on semantic meanings. In other words, Sentence Transformers and Chroma together take in chunks of text that were split by the LangChain tools and calculate numerical calculations of the semantic/"human" meanings of the texts and store them in a database specifically for vector data queryable by LLM. The text embedding model initially used for this data is Sentence Transformers’ all-MiniLM-L6-v2.
+
+mAIRy chats using openly available Large Language Models (LLMs) via Ollama. Ollama is an open source framework to develop with LLMs locally, and additionally performs well in a small production environment. mAIRy’s initial LLM in use is Google’s Gemma 2, but more options are in store.
+
+The Python library Streamlit generates mAIRy’s chat interface. Molly has future features and improvements planned for mAIRy as well as plans to extend the base system to other use cases.
+
+To build this bot, Molly learned/improved upon LLM-based app programming, containerization, Docker, computer networking, cloud infrastructure, software architecture, retrieval augmented generation, cloud computing, DNS configuration, VPN configuration, web server administration, site reliability engineering, machine learning, tokenization, embeddings generation, observability, monitoring, software engineering. 
+
