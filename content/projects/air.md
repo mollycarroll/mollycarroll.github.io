@@ -1,5 +1,5 @@
 +++
-date = "2024-12-17T04:11:47-07:00"
+date = "2025-01-26T04:11:47-07:00"
 draft = false
 title = "Molly's Resume Here"
 description = "My resume is no longer printable or convertible to PDF or Docx, because it is a chatbot who does the interview part, too."
@@ -7,7 +7,7 @@ keywords = ["resume", "chatbot", "innovation", "rag"]
 tech_stack = ["python", "streamlit", "ollama"]
 +++
 
-Go [here](https://streamlit-ui.fly.dev) to chat!
+Visit [hiremolly.com](https://hiremolly.com) to chat!
 
 In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGPT and started the GenAI hype explosion of that year and beyond. My familiarity with AI was only in the more traditional data science/academic sense at the time, but this time was also the advent of open source AI & ML technologies that opened the door. Before this time, I'd only found ways to teach myself data science with Python online for free, with running AI models on big GPUs was locked inside grad schools. My first look at HuggingFace's site and I never looked back. Just kept reading the docs. There are always more docs to read.
 
