@@ -100,3 +100,6 @@ enableRobotsTXT = true
     category = "categories"
     series = "series"
     tech_stack = "tech_stack"
+
+[markup]
+goldmark.renderer = {unsafe = true}

@@ -1,7 +1,4 @@
 {{ define "main" -}}
-<h2>
-{{ with .Site.GetPage "/about" }}{{ .Content }}{{ end }}
-</h2>
 <div class="posts">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
     {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
