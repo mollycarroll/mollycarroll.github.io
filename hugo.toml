@@ -24,8 +24,9 @@ enableRobotsTXT = true
 
     # TODO: revise menu config
     menu = [
-        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
         {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 4},
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
+        {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
     ]
 
 
