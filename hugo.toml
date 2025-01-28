@@ -7,13 +7,12 @@ enableRobotsTXT = true
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    front_page_content = ["about"]
-
+    # front_page_content=[]
     brand = "Molly Carroll"
-    # brand_image = "assets/images/bonsai.png"    # path to the image shown in the sidebar #TODO figure out how images work in hugo
+    # brand_image = "/images/bonsai.png"
     description = 'senior software engineer, software architect, improv comedian, building AI/ML for the future' # Used as default meta description if not specified in front matter
-    dark_mode = true                      # optional - defaults to false
-    # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+    dark_mode = false                      # optional - defaults to false
+    favicon = "/images/bonsai.png"             # path to favicon (defaults to favicon.png)
     hideToc = false
 
     # MENU PLACEHOLDER
@@ -25,19 +24,16 @@ enableRobotsTXT = true
 
     # TODO: revise menu config
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
-        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 4},
-        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3},
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
+        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 4},
     ]
 
 
     # Links to your socials.  Comment or delete any you don"t need/use. 
-    # discord_url = "https://discord.com"
-    # email_url = "mailto://user@domain"
-    facebook_url = "https://facebook.com/madsciai"
-    github_url = "https://github.com/mollycarroll"
-    instagram_url = "https://instagram.com/madsciai"
+    email_url = "mailto:molly@mollycarroll.dev"
     linkedin_url = "https://linkedin.com/mollyacarroll"
+    discord_url = "https://discordapp.com/users/661686390895017984"
+    github_url = "https://github.com/mollycarroll"
     youtube_url = "https://youtube.com/@madsciai"
 
     # NOTE: If you don"t want to use RSS, comment or delete the following lines
