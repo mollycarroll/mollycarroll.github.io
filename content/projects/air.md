@@ -1,13 +1,13 @@
 +++
-date = "2025-01-26T04:11:47-07:00"
+date = "2025-01-29T04:11:47-07:00"
 draft = false
 title = "AI Resume"
-description = "One day long ago I decided to build a chatbot that does my job interviews for me. This did not exist before I built one."
+description = "One day long ago I decided to build a chatbot that does my job interviews for me. This did not exist before I built one. AFAIK."
 keywords = ["resume", "chatbot", "innovation", "rag"]
 tech_stack = ["Python", "ChromaDB", "Ollama", "Gemma2", "FlyIO", "Docker", "Langchain Text Splitters", "Sentence Transformers"]
 +++
 
-Meet my newest creation at [hiremolly.com](https://hiremolly.com).
+Meet my newest creation at [hiremolly.com](https://hiremolly.com). Refresh if there's an error. It's a known bug. On it.
 
 In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGPT and started the GenAI hype explosion of that year and beyond. My familiarity with AI was only in the more traditional data science/academic sense at the time, but this time was also the advent of open source AI & ML technologies that opened the door. Before this time, I'd only found ways to teach myself data science with Python online for free, with running AI models on big GPUs was locked inside grad schools. My first look at HuggingFace's site and I never looked back. Just kept reading the docs. There are always more docs to read.
 

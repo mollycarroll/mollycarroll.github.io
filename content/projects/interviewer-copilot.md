@@ -1,5 +1,5 @@
 +++
-date = "2025-01-29T00:02:15-07:00"
+date = "2025-01-24T00:02:15-07:00"
 draft = false
 title = 'AI for HR Dev/Tech Team Lead to Project Success'
 description = "My first project (though for Thoughtworks vs. an external client) as a tech lead was for a RAG-enabled AI bot that acts as a job interviewer/recruiter's copilot, evaluating job candidates against criteria in real time. Ironically on the side I'd been working on a similar bot that answers as the candidate for months by then!"

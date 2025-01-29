@@ -1,5 +1,5 @@
 +++
-date = "2025-01-29T00:02:08-07:00"
+date = "2025-01-17T00:02:08-07:00"
 draft = false
 title = 'Backend + Architectural Leadership @ Startup'
 description = "The Small Team Advantage: Many Hats @ Startup = Advanced Tech Experience Gains"

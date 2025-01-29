@@ -1,13 +1,12 @@
 +++
-date = "2024-11-13T00:02:36-07:00"
-draft = true
-title = 'PromptCamp: AI Training at Thoughtworks'
+date = "2025-01-13T00:02:36-07:00"
+draft = false
+title = 'PromptCamp: Technical AI Training at Thoughtworks'
 description = "Fun at PromptCamp - WIP"
 keywords = ["AI", "artificial intelligence", "technical training", "AI SME"]
 tech_stack = ["python", "langchain", "llama index", "huggingface transformers"]
 +++
 
-[placeholder!!]
 As a software engineer at Thoughtworks, I'm always striving to learn and grow within my field. That's why I was thrilled to be involved in the development of PromptCamp, our company's initiative to train our employees on advanced artificial intelligence skills.
 
 PromptCamp is designed to bridge the gap between theoretical AI knowledge and practical application, equipping our colleagues with the skills needed to contribute meaningfully to our AI-driven projects. I was fortunate enough to be a key member of the leadership team for this project, working alongside talented engineers to design and deliver high-quality training materials.
