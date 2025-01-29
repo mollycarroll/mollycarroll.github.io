@@ -1,7 +1,7 @@
 +++
 date = "2025-01-26T04:11:47-07:00"
 draft = false
-title = "AI Resume, aka mAIRy the chatbot"
+title = "AI Resume"
 description = "One day long ago I decided to build a chatbot that does my job interviews for me. This did not exist before I built one."
 keywords = ["resume", "chatbot", "innovation", "rag"]
 tech_stack = ["Python", "ChromaDB", "Ollama", "Gemma2", "FlyIO", "Docker", "Langchain Text Splitters", "Sentence Transformers"]
@@ -13,19 +13,19 @@ In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGP
 
 In January of 2024, I learned what RAG stands for. In February of 2024 I decided to teach myself all the skills necessary to build a generative AI RAG chatbot that would answer job interview questions as my representative. Regardless of a job search (which I'd planned to have as an option among all the industry layoffs) I wanted to have a portfolio project up that actually demonstrated my skills vs. very old, simpler ones.
 
-In July of 2024 I was still figuring mAIRy out while teaching AI at work, when I was one of the layoffs of round 4. So, I worked diligently and almost daily on the AIR (A.I. Resume, before I "named" my first creation) for the entirety of 2024, with the second half of the year as a full-time devotion. 
+In July of 2024 I was still figuring mAIRy out while teaching AI at work, when I was one of the layoffs of round 4. So, I worked diligently and almost daily on the AIR (A.I. Resume, before I "named" my first creation) for the entirety of 2024, with the second half of the year as a full-time devotion.
 
 I could have done things very simply, for example in Google Cloud where I'm certified, but with cost a key factor and my personal love of OSS, I challeneged myself to build this app as close to $0 as possible.
 
 I tested a significant number of options in the wild west ecosystem of open source AI (here encompassing generative AI, AI-driven apps, LLMs and machine learning) and I can probably bet everything I started out with is now a broken dependency as this new tech space moved, morphed, broke and got updated constantly and fast. What mAIRy uses today is fairly stable for now, at least.
 
-The app’s main logic/functionality is written in Python. At first I developed using AI-driven-app-development frameworks available in Python and ended up with a deep understanding of/how to work with the LangChain and LlamaIndex frameworks specifically. 
+The app’s main logic/functionality is written in Python. At first I developed using AI-driven-app-development frameworks available in Python and ended up with a deep understanding of/how to work with the LangChain and LlamaIndex frameworks specifically.
 
-Overall, I decided to try not to rely on any one framework for the entire or most of the app. This means mAIRy is fairly vanilla-coded and 100% hand-crafted source code. mAIRy does use two tools built by the folks at LangChain, and they are both Text Splitters used in the ingestion of raw text data to be embedded and sent to the vector database. 
+Overall, I decided to try not to rely on any one framework for the entire or most of the app. This means mAIRy is fairly vanilla-coded and 100% hand-crafted source code. mAIRy does use two tools built by the folks at LangChain, and they are both Text Splitters used in the ingestion of raw text data to be embedded and sent to the vector database.
 
 mAIRy’s vector database is ChromaDB, a fantastic open source database for AI that stores the ingested + embedded "career data" in a database that serves as mAIRy’s brain (so, Chroma DB, not Abby Normal) and much more. Chroma’s special embedding function for Sentence Transformers (a library providing models to calculate text embeddings) is what performs the calculations for embeddings so that mAIRy may retrieve answers to user queries based on semantic meanings.
 
- In other words, Sentence Transformers and Chroma together take in chunks of text that were split by the LangChain tools and calculate numerical calculations of the semantic/"human" meanings of the texts and store them in a database specifically for vector data queryable by LLM. The text embedding model initially used for this data is Sentence Transformers’ all-MiniLM-L6-v2.
+In other words, Sentence Transformers and Chroma together take in chunks of text that were split by the LangChain tools and calculate numerical calculations of the semantic/"human" meanings of the texts and store them in a database specifically for vector data queryable by LLM. The text embedding model initially used for this data is Sentence Transformers’ all-MiniLM-L6-v2.
 
 mAIRy chats using openly available Large Language Models (LLMs) via Ollama. Ollama is an open source framework to develop with LLMs locally, and additionally performs well in a small production environment. mAIRy’s initial LLM in use is Google’s Gemma 2, but more options are in store.
 

@@ -1,5 +1,5 @@
 {{ define "main" -}}
-{{/*  <div class="posts">
+<div class="posts">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
     {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
     <article class="post">
@@ -16,7 +16,7 @@
         {{ end }}
     </article>
     {{- end }}
-</div>  */}}
+</div>
 {{ with .Site.GetPage "/headless" }}
   {{ .Content }}
   {{ end }}
