@@ -9,7 +9,7 @@ tech_stack = ["Python", "ChromaDB", "Ollama", "Gemma2", "FlyIO", "Docker", "Lang
 
 Meet my newest creation at [hiremolly.com](https://hiremolly.com). Refresh if there's an error. It's a known bug.
 
-While you test the chatbot, download this less exciting PDF version of my resume to reference.
+While you test the chatbot, download this less exciting [PDF version]("https://drive.proton.me/urls/TDZEXP77CR#RnYgj8x9hFHW") of my resume to reference.
 
 In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGPT and started the GenAI hype explosion of that year and beyond. My familiarity with AI was only in the more traditional data science/academic sense at the time, but this time was also the advent of open source AI & ML technologies that opened the door. Before this time, I'd only found ways to teach myself data science with Python online for free, with running AI models on big GPUs was locked inside grad schools. My first look at HuggingFace's site and I never looked back. Just kept reading the docs. There are always more docs to read.
 
