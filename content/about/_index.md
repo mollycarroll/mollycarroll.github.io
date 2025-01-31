@@ -1,5 +1,5 @@
 +++
 draft = false
-title = 'About the basics'
+title = 'About'
 keywords = []
 +++

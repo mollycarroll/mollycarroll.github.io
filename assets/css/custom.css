@@ -60,13 +60,17 @@ html {
 
 .sidebar-about h1 {
     text-align: left;
-    font-size: 2em;
+    font-size: 1.8em;
     letter-spacing: .07em
 }
 
 .sidebar-about p.lead {
   text-align: left;
   font-family: 'Odibee Sans Regular';
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   letter-spacing: .07em
+}
+
+.sidebar-nav li.bullet {
+  margin-bottom: 1.1rem;
 }

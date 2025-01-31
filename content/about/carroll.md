@@ -4,7 +4,7 @@ title = "About Molly"
 keywords = ['molly carroll', 'software engineering', 'gifted', 'self taught developer', 'organization president', 'inventor', 'founder', 'cat mom']
 +++
 
-Molly Carroll is a (presumably) genius (alleged) human whose profession is software engineering. She is a powerhouse full stack generalist in software development and has experience in software architecture, deploying + monitoring production software, lots of DevOps and doing whatever is needed for her team's/business success.
+Molly Carroll is a (presumably) genius (alleged) human whose profession is software engineering. She is a powerhouse (workaholic) full stack generalist in software development and has experience in software architecture, deploying + monitoring production software, lots of DevOps and doing whatever is needed for her team's/business success.
 
 Molly's enthusiastic SME-level technical speciality is development / solutions engineering using AI and/or machine learning. She's led a dev team to build a demo RAG chatbot for an HR client and to use in future sales pitches. She's trained dev teams directly and given larger sessions on various AI topics as a working technologist.
 

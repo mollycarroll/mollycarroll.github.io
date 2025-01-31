@@ -1,32 +1,25 @@
 baseURL = "https://mollycarroll.dev/"
 languageCode = "en-us"
-pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
+pluralizelisttitles = false
 enableRobotsTXT = true
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    # front_page_content=[]
+    front_page_content=["posts", "about"]
     brand = "Molly Carroll"
     # brand_image = "/images/bonsai.png"
     description = 'senior software engineer, software architect, improv comedian, building AI/ML for the future' # Used as default meta description if not specified in front matter
-    dark_mode = false                      # optional - defaults to false
-    favicon = "/images/bonsai.png"             # path to favicon (defaults to favicon.png)
+    dark_mode = false 
+    # favicon = "/images/bonsai.png"
     hideToc = false
-
-    # MENU PLACEHOLDER
-    # Menu dict keys:
-        # Name:         The name to display on the menu.
-        # URL:          The directory relative to the content directory.
-        # HasChildren:  If the directory"s files should be listed.  Default is true.
-        # Limit:        If the files should be listed, how many should be shown.
 
     # TODO: revise menu config
     menu = [
+      {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
         {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 4},
-        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
-        {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3}
     ]
 
 
@@ -97,3 +90,9 @@ enableRobotsTXT = true
     category = "categories"
     series = "series"
     tech_stack = "tech_stack"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.link]
+        enableDefault = true
