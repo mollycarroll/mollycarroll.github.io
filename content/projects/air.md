@@ -7,10 +7,6 @@ keywords = ["resume", "chatbot", "innovation", "rag"]
 tech_stack = ["Python", "ChromaDB", "Ollama", "Gemma2", "FlyIO", "Docker", "Langchain Text Splitters", "Sentence Transformers"]
 +++
 
-Meet my newest creation at [hiremolly.com](https://hiremolly.com). Refresh if there's an error. It's a known bug.
-
-While you test the chatbot, download this less exciting [PDF version]("https://drive.proton.me/urls/TDZEXP77CR#RnYgj8x9hFHW") of my resume to reference.
-
 In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGPT and started the GenAI hype explosion of that year and beyond. My familiarity with AI was only in the more traditional data science/academic sense at the time, but this time was also the advent of open source AI & ML technologies that opened the door. Before this time, I'd only found ways to teach myself data science with Python online for free, with running AI models on big GPUs was locked inside grad schools. My first look at HuggingFace's site and I never looked back. Just kept reading the docs. There are always more docs to read.
 
 In January of 2024, I learned what RAG stands for. In February of 2024 I decided to teach myself all the skills necessary to build a generative AI RAG chatbot that would answer job interview questions as my representative. Regardless of a job search (which I'd planned to have as an option among all the industry layoffs) I wanted to have a portfolio project up that actually demonstrated my skills vs. very old, simpler ones.
