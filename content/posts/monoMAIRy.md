@@ -1,6 +1,6 @@
 +++
 date = "2025-02-09T22:33:18-07:00"
-draft = true
+draft = false
 title = 'when your first robot is (basically) a toddler in production'
 category = "project"
 summary = "Releasing my first robot on the production web opens doors for even more learning"

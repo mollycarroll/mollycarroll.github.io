@@ -17,9 +17,9 @@ enableRobotsTXT = true
 
     # TODO: revise menu config
     menu = [
-      {Name = "About", URL = "/about/", HasChildren = true, Limit = 2},
-        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 4},
-        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3}
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
+        {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 2},
+        {Name = "About", URL = "/about/", HasChildren = true, Limit = 1},
     ]
 
 
@@ -90,9 +90,3 @@ enableRobotsTXT = true
     category = "categories"
     series = "series"
     tech_stack = "tech_stack"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderHooks]
-      [markup.goldmark.renderHooks.link]
-        enableDefault = true
