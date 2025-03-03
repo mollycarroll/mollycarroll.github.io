@@ -85,6 +85,10 @@ page = ['html']
 
 [menus]
 [[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 10
+[[menus.main]]
 name = 'Notes'
 pageRef = '/notes'
 weight = 20
@@ -93,12 +97,13 @@ name = 'Posts'
 pageRef = '/posts'
 weight = 30
 [[menus.main]]
-name = 'Graph'
-pageRef = '/graph'
+name = 'Projects'
+pageRef = '/projects'
 weight = 40
 [[menus.main]]
-name = 'About'
-pageRef = '/about'
+name = 'Graph'
+pageRef = '/graph'
+weight = 50
 
 [markup]
 [markup.highlight]
