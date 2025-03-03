@@ -3,7 +3,7 @@ title: 'Welcome'
 date: 'Wed Jan 29 08:22:59 MST 2025'
 draft: false
 category: 'blog'
-keywords: ['welcome to the site', 'meta']
+tags: ['welcome to the site', 'meta']
 summary: 'explanation of the site and stuff'
 ---
 

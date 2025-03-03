@@ -3,8 +3,7 @@ title: 'Adorably Unreliable - my Toddler Chatbot'
 date: 'Sun Feb 9 08:24:54 MST 2025'
 draft: false
 category: 'blog'
-keywords:
-  ['production software', 'production release', 'deployment', 'cloud computing', 'architecture']
+tags: ['production software', 'production release', 'deployment', 'cloud computing', 'architecture']
 summary: 'In the bleeding edge open-source AI world, incompatibilities and requirements to shift and learn about other aspects of the full system pop up a LOT. It helps to love learning/challenges (👍) and be patient when excited (👎). Here is my mAIRy chatbot facing some blockers.'
 ---
 

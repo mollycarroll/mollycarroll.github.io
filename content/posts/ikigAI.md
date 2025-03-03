@@ -3,7 +3,7 @@ title: '2024 - the Year of IkigAI'
 date: 'Sat Jun 22 08:30:06 MST 2025'
 draft: false
 category: 'blog'
-keywords:
+tags:
   [
     'career path',
     'vocation',

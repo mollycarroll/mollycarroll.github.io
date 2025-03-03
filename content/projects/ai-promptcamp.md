@@ -1,6 +1,7 @@
 ---
-title: 'Ai Promptcamp'
-date: 'Mon Mar  3 08:35:35 MST 2025'
+title: 'PromptCamp: Technical AI Training at Thoughtworks'
+date: 'Mon Jan 13 08:35:35 MST 2025'
 draft: true
-category: ''
+category: 'leadership'
+tags: ['technical training', 'AI trainer', 'prompt engineering']
 ---
