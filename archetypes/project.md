@@ -1,6 +1,6 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-pubdate: '{{ .Date | time.Now.Format ":date_medium" }}'
+date: '{{ .Date }}'
 draft: true
 category: 'project'
 keywords: []
