@@ -1,7 +1,7 @@
 baseURL = 'https://mollycarroll.dev/'
 languageCode = 'en-us'
 title = "Molly Carroll's software engineering shenanigans | peace. love. AI."
-copyright = 'Molly Carroll'                                                   # Used in the footer copyright mention.
+copyright = 'Molly Carroll'                                                   # footer                                          
 enableRobotsTXT = true
 
 [module]
