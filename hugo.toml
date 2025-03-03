@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = "Molly Carroll's software engineering shenanigans | peace. love. AI."
 copyright = 'Molly Carroll'
 enableRobotsTXT = true
-theme = "hugo-theme-til"
 
 [params]
 # Set how dates should appear across the site.
@@ -77,10 +76,6 @@ blockCC = false
 # Default: false
 blockAI = false
 
-
-[module]
-[[module.imports]]
-path = "github.com/michenriksen/hugo-theme-til"
 
 [outputs]
 home = ['html']

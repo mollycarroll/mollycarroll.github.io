@@ -1,4 +1,7 @@
-
+# molly-til gitignore
+.chglog/
+.prettierignore
+.prettierrc
 
 # hugo
 /public/
