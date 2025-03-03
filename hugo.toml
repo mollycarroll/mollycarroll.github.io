@@ -109,3 +109,9 @@ style = 'monokai'
 [markup.goldmark.parser]
 [markup.goldmark.parser.attribute]
 block = true
+
+[taxonomies]
+category = 'categories'
+series = 'series'
+tags = 'tags'
+track = 'tracks'
