@@ -53,11 +53,11 @@ showCategoryFilter = true
 # Options: `by`, `by_sa`, `by_nc`, `by_nc_sa`, `by_nd`, `by_nc_nd`, `zero`, `none`
 # Learn more at https://creativecommons.org/share-your-work/cclicenses/
 # Default: none
-creativeCommonsLicense = 'none'
+creativeCommonsLicense = 'by'
 
 # Show Creative Commons icons for the selected license.
 # Default: true
-showCreativeCommonsIcons = false
+showCreativeCommonsIcons = true
 
 # Show a credit link to the Today I Learned theme in the footer.
 # Default: true
@@ -69,12 +69,12 @@ showThemeCredit = false
 # Block CommonCrawl from indexing your site. CommonCrawl data is often used to train AI models.
 # Learn more at https://commoncrawl.org/ccbot
 # Default: false
-blockCC = true
+blockCC = false
 
 # Block various crawlers associated with AI and machine learning model training.
 # Crawler list from https://github.com/ai-robots-txt/ai.robots.txt
 # Default: false
-blockAI = false
+blockAI = true
 
 titleCaseStyle = 'none'
 
