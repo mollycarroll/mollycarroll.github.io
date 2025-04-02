@@ -2,6 +2,7 @@
 .chglog/
 .prettierignore
 .prettierrc
+.vscode/
 
 # hugo
 /public/
