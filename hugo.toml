@@ -124,3 +124,7 @@ category = 'categories'
 series = 'series'
 tags = 'tags'
 track = 'tracks'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
