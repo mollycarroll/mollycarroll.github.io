@@ -72,7 +72,7 @@ jobs:
       - name: Build with Hugo
         run: |
           hugo \
-            --gc
+            --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
