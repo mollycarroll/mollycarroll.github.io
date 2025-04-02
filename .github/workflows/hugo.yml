@@ -53,7 +53,6 @@ jobs:
       - name: Install Node.js dependencies
         run: |
           if [[ -f package-lock.json || -f npm-shrinkwrap.json ]]; then
-            npm install vis-network
             npm ci 
             echo "node modules installed successfully" 
             ls -la node_modules/vis-network || echo "vis-network not found!!#@%$@#^"
