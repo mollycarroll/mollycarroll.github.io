@@ -12,7 +12,7 @@ dateFormat = ':date_long'
 
 # Show content graph for single notes and posts.
 # Default: true
-showGraph = false
+showGraph = true
 
 # Author details for the JSON-LD structured data.
 [params.author]
@@ -104,10 +104,10 @@ weight = 3
 name = 'Projects'
 pageRef = '/projects'
 weight = 4
-# [[menus.main]]
-# name = 'Graph'
-# pageRef = '/graph'
-# weight = 5
+[[menus.main]]
+name = 'Graph'
+pageRef = '/graph'
+weight = 5
 
 [markup]
     [markup.goldmark]
