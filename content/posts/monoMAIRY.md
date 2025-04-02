@@ -1,5 +1,5 @@
 ---
-title: 'Adorably Unreliable - my Toddler Chatbot'
+title: 'Adorably unreliable - my toddler chatbot'
 date: 'Sun Feb 9 08:24:54 MST 2025'
 draft: false
 category: 'blog'

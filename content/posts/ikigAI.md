@@ -1,5 +1,5 @@
 ---
-title: '2024 - the Year of IkigAI'
+title: '2024 - the year of IkigAI'
 date: 'Wed Oct 30 23:17:13 MDT 2024'
 draft: false
 category: 'blog'

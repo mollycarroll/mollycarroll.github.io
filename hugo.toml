@@ -87,11 +87,15 @@ page = ['html']
 [[menus.main]]
 name = 'About'
 pageRef = '/about'
-weight = 10
+weight = 2
 [[menus.main]]
-name = 'Notes'
-pageRef = '/notes'
-weight = 20
+name = 'Resume'
+pageRef = '/about'
+weight = 1
+[[menus.main]]
+# name = 'Notes'
+# pageRef = '/notes'
+# weight = 20
 [[menus.main]]
 name = 'Posts'
 pageRef = '/posts'
@@ -106,14 +110,14 @@ pageRef = '/graph'
 weight = 50
 
 [markup]
-[markup.highlight]
-noClasses = false
-style = 'monokai'
+    [markup.goldmark]
+        [markup.goldmark.parser]
+            [markup.goldmark.parser.attribute]
+                block = true
 
-[markup.goldmark]
-[markup.goldmark.parser]
-[markup.goldmark.parser.attribute]
-block = true
+# [markup.highlight]
+# noClasses = false
+# style = 'monokai'
 
 [taxonomies]
 category = 'categories'
