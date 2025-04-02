@@ -1,10 +1,10 @@
 ---
 title: 'Resume'
 date: 'Tue Apr 1 13:15:34 MDT 2025'
-draft: true
+draft: false
 category: 'info'
 tags: ['resume download', 'less fun non-AI resume', 'molly carroll']
 summary: 'Here you can download a PDF/one page version of my resume.'
 ---
 
-https://drive.proton.me/urls/P5NG8730D4#QZdpPOkSaQDN 
+[PDF resume download link](https://drive.proton.me/urls/P5NG8730D4#QZdpPOkSaQDN)
