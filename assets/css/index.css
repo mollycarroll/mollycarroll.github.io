@@ -1101,7 +1101,7 @@ body {
 
 nav a:hover {
   text-decoration-line: underline;
-  text-decoration-color: #cbd5e1;
+  text-decoration-color: #90e7a8;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
@@ -1114,12 +1114,12 @@ nav a.ancestor {
 }
 
 nav a.ancestor {
-  text-decoration-color: #cbd5e1;
+  text-decoration-color: #90e7a8;
 }
 
 article.main a {
   --tw-text-opacity: 1 !important;
-  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
+  color: rgb(87, 219, 125 / var(--tw-text-opacity)) !important;
 }
 
 article.main a:hover {

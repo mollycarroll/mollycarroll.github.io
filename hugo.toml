@@ -81,13 +81,13 @@ page = ['html']
 
 [menus]
 [[menus.main]]
-name = 'About'
-pageRef = '/about'
-weight = 2
-[[menus.main]]
 name = 'Resume'
 pageRef = '/about/resume.md'
 weight = 1
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 2
 [[menus.main]]
 # name = 'Notes'
 # pageRef = '/notes'
@@ -106,14 +106,14 @@ pageRef = '/graph'
 weight = 5
 
 [markup]
-    [markup.goldmark]
-        [markup.goldmark.parser]
-            [markup.goldmark.parser.attribute]
-                block = true
+[markup.goldmark]
+[markup.goldmark.parser]
+[markup.goldmark.parser.attribute]
+block = true
 
 [markup.highlight]
-  noClasses = false
-  style = 'monokai'
+noClasses = false
+style = 'monokai'
 
 [taxonomies]
 category = 'categories'
@@ -122,5 +122,5 @@ tags = 'tags'
 track = 'tracks'
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'

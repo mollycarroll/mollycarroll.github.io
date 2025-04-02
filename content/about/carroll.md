@@ -13,9 +13,9 @@ tags:
     'startup founder',
     'inventor',
     'origin story',
-    'perhaps comedian',
+    'comedy',
   ]
-summary: 'An intriguing narrative about my career/where the heck I came from. Read on about a love of learning and leadership, what two degrees I actually earned in college and my tech startup founder experience.'
+summary: 'An intriguing narrative about my career/where the heck I came from. Read on about a love of learning and leadership, what two degrees I earned in college (and use to this day!) and my _first_ tech startup founder experience.'
 ---
 
 Molly Carroll is an (alleged) human whose profession is software engineering. She is a powerhouse (workaholic.. working on it) full stack generalist in software development and has experience in software architecture, deploying + monitoring production software, lots of DevOps and doing whatever is needed for her team's/business success.
