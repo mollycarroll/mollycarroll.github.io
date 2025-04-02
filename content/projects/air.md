@@ -1,7 +1,7 @@
 ---
-title: 'Air'
-date: 'Mon Mar  3 08:35:42 MST 2025'
-draft: true
+title: 'AI resume: 1st iteration'
+date: 'Wed Jan 29 08:35:42 MST 2025'
+draft: false
 category: 'project'
 tags:
   [
@@ -17,6 +17,8 @@ tags:
     'generative AI'
   ]
 ---
+
+> FYI (April 2025): I wrote this post at the project's "soft launch" in January. Since then it has gone through transitions--mostly in architecture and additional functionality. I have a lot to say about this project, and future posts will discuss this additional development work.
 
 In 2022 I was working as an engineer at Thoughtworks, and OpenAI released ChatGPT and started the GenAI hype explosion of that year and beyond. My familiarity with AI was only in the more traditional data science/academic sense at the time, but this time was also the advent of open source AI & ML technologies that opened the door. Before this time, I'd only found ways to teach myself data science with Python online for free, with running AI models on big GPUs was locked inside grad schools. My first look at HuggingFace's site and I never looked back. Just kept reading the docs. There are always more docs to read.
 
