@@ -1,7 +1,8 @@
 ---
 title: 'Projects'
-date: 'Mon Mar 3 08:19:28 MST 2025'
-draft: false
-category: '' # tech project, BD+, MSAI etc.
+date: '2025-04-02T00:44:13-06:00'
+draft: true
+category: 'project'
 tags: []
+summary: ''
 ---

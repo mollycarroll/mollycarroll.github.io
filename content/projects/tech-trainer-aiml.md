@@ -1,9 +1,10 @@
 ---
-title: 'PromptCamp: Technical AI Training at Thoughtworks'
-date: 'Mon Jan 13 08:35:35 MST 2025'
+title: 'AI solutions design technical trainer with Thoughtworks PromptCamp'
+date: '2024-01-02T00:44:16-06:00'
 draft: false
 category: 'project'
 tags: ['technical training', 'AI trainer', 'prompt engineering']
+summary: 'I worked with some excellent Thoughtworks colleagues to deliver AI technical training in a program called PromptCamp.'
 ---
 
 As a software engineer at Thoughtworks, I always took steps to learn and grow within my field. That's why I was thrilled to be involved in the development of PromptCamp, our company's initiative to train our employees on advanced artificial intelligence skills.

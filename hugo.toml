@@ -76,7 +76,7 @@ blockCC = false
 # Default: false
 blockAI = true
 
-titleCaseStyle = 'none'
+titleCaseStyle = 'firstupper'
 
 [outputs]
 home = ['html']

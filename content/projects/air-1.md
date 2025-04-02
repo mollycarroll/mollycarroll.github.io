@@ -1,10 +1,9 @@
 ---
-title: 'AI resume: 1st iteration'
-date: 'Wed Jan 29 08:35:42 MST 2025'
+title: 'AI Resume: 1st iteration'
+date: '2025-01-30T00:49:07-06:00'
 draft: false
 category: 'project'
-tags:
-  [
+tags: [
     'Python',
     'ChromaDB',
     'Ollama',
@@ -16,6 +15,7 @@ tags:
     'chatbot',
     'generative AI'
   ]
+summary: 'One day long ago I decided to build a chatbot that does my job interviews for me. This led to a magnitude of learning what I needed to do this that this post is only a fraction of the story.'
 ---
 
 > FYI (April 2025): I wrote this post at the project's "soft launch" in January. Since then it has gone through transitions--mostly in architecture and additional functionality. I have a lot to say about this project, and future posts will discuss this additional development work.

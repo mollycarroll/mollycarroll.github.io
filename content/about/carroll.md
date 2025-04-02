@@ -1,6 +1,6 @@
 ---
-title: 'Carroll'
-date: 'Mon Mar 3 08:12:14 MST 2025'
+title: 'Molly: senior software engineer, challenge-seeker, mother of robots'
+date: 'Thu Jan 23 08:12:14 MST 2025'
 draft: false
 category: 'info'
 tags:
@@ -9,10 +9,11 @@ tags:
     'senior software engineer',
     'hold my beer engineer',
     'tech lead',
-    'likely tech CEO',
+    'future tech CEO',
     'startup founder',
     'inventor',
-    'origin story'
+    'origin story',
+    'perhaps comedian',
   ]
 summary: 'An intriguing narrative about my career/where the heck I came from. Read on about a love of learning and leadership, what two degrees I actually earned in college and my tech startup founder experience.'
 ---
