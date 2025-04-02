@@ -1,10 +1,9 @@
 ---
 title: '2024 - the Year of IkigAI'
-date: 'Sat Jun 22 08:30:06 MST 2025'
+date: 'Wed Oct 30 23:17:13 MDT 2024'
 draft: false
 category: 'blog'
-tags:
-  [
+tags: [
     'career path',
     'vocation',
     'artificial intelligence',
@@ -12,7 +11,7 @@ tags:
     'open source',
     'machine learning'
   ]
-summary: 'A blog post written mid-2024 describing the feeling of arrival at my career calling/vocation. And what I did once arrived, which is code AI after/when not at work, learn everything possible to indie-hack my own AI software and think many enterpreneurial thoughts. '
+summary: 'A blog post written mid-2024 describing the feeling of arrival at my career calling/vocation. And what I did once arrived, which is code AI after/when not at work, learn everything possible to indie-hack my own AI software and think many enterpreneurial thoughts.'
 ---
 
 I wonder if there is a word or phrase for writer’s block, in terms of writing a blog centered on topics in one’s professional experiences, that is entirely because I have so much to say with everything I have learned and built in tech since the beginning of 2024. Number one thing I learned is my own version of the [experience/realization the Japanese call 生き甲斐（ikigai)](https://www.japan.go.jp/kizuna/2022/03/ikigai_japanese_secret_to_a_joyful_life.html).
