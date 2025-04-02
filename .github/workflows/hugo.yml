@@ -51,7 +51,15 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5.0.0
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: |
+          if [[ -f package-lock.json || -f npm-shrinkwrap.json ]]; then
+            npm ci 
+            echo "node modules installed successfully" 
+            ls -la node_modules/vis-network || echo "vis-network not found!!#@%$@#^"
+          else
+            echo "no package-lock.json; skipping npm install"
+          fi
+       # run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Cache Restore
         id: cache-restore
         uses: actions/cache/restore@v4
