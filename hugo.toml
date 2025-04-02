@@ -7,7 +7,6 @@ enableRobotsTXT = true
 [params]
 # Set how dates should appear across the site.
 # For format options, visit https://gohugo.io/functions/time/format/
-# Default: :date_long
 dateFormat = ':date_long'
 
 # Show content graph for single notes and posts.
@@ -50,9 +49,7 @@ showCategoryFilter = true
 # Footer setup
 [params.footer]
 # Specify the Creative Commons license to apply to your content.
-# Options: `by`, `by_sa`, `by_nc`, `by_nc_sa`, `by_nd`, `by_nc_nd`, `zero`, `none`
 # Learn more at https://creativecommons.org/share-your-work/cclicenses/
-# Default: none
 creativeCommonsLicense = 'by'
 
 # Show Creative Commons icons for the selected license.
@@ -61,10 +58,9 @@ showCreativeCommonsIcons = true
 
 # Show a credit link to the Today I Learned theme in the footer.
 # Default: true
-showThemeCredit = false
+showThemeCredit = true
 
 # robots.txt setup
-# IMPORTANT: remember to set `enableRobotsTXT = true` in your site's hugo.toml file.
 [params.robotstxt]
 # Block CommonCrawl from indexing your site. CommonCrawl data is often used to train AI models.
 # Learn more at https://commoncrawl.org/ccbot
@@ -115,9 +111,9 @@ weight = 5
             [markup.goldmark.parser.attribute]
                 block = true
 
-# [markup.highlight]
-# noClasses = false
-# style = 'monokai'
+[markup.highlight]
+  noClasses = false
+  style = 'monokai'
 
 [taxonomies]
 category = 'categories'
