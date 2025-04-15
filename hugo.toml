@@ -1,4 +1,4 @@
-baseURL = 'https://mollycarroll.dev'
+baseURL = 'https://technicallymolly.com'
 languageCode = 'en-us'
 title = "technically Molly"
 copyright = 'Molly Carroll'
@@ -16,7 +16,7 @@ showGraph = false
 # Author details for the JSON-LD structured data.
 [params.author]
 name = 'Molly Carroll'
-email = 'molly@mollycarroll.dev'
+email = 'molly@mollycarroll.net'
 
 # Homepage setup
 [params.home]
