@@ -1,6 +1,6 @@
-baseURL = 'https://technicallymolly.com'
+baseURL = 'https://mollycarroll.dev'
 languageCode = 'en-us'
-title = "technically Molly"
+title = "Molly Carroll: software engineer | mother of robots"
 copyright = 'Molly Carroll'
 enableRobotsTXT = true
 
@@ -16,7 +16,7 @@ showGraph = false
 # Author details for the JSON-LD structured data.
 [params.author]
 name = 'Molly Carroll'
-email = 'molly@mollycarroll.net'
+email = 'molly@mollycarroll.dev'
 
 # Homepage setup
 [params.home]
@@ -100,10 +100,10 @@ weight = 3
 name = 'Projects'
 pageRef = '/projects'
 weight = 4
-# [[menus.main]]
-# name = 'Graph'
-# pageRef = '/graph'
-# weight = 5
+[[menus.main]]
+name = 'Graph'
+pageRef = '/graph'
+weight = 5
 
 [markup]
 [markup.goldmark]
