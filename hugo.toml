@@ -1,6 +1,6 @@
 baseURL = 'https://mollycarroll.dev'
 languageCode = 'en-us'
-title = "Molly Carroll: software engineer | mother of robots"
+title = "technically Molly"
 copyright = 'Molly Carroll'
 enableRobotsTXT = true
 
