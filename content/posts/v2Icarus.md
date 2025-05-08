@@ -4,7 +4,7 @@ date: 'Thu May  8 01:10:14 MDT 2025'
 draft: false
 category: 'blog'
 tags: ['production software', 'production release', 'deployment', 'cloud computing', 'architecture', 'microservices']
-summary: 'Updating the fans on RAG chatbot evolution - we're microservices now.'
+summary: 'Updating the fans on RAG chatbot evolution - hello microservices!'
 ---
 
 It’s been a while since I’ve published another post here, but I’ve been diligently working on various rearchitecting of my AI Resume chatbot project. Turns out, chronic overachievers like myself are classic victims of becoming over-optimizers too. 
