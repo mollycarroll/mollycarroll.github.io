@@ -11,7 +11,7 @@ dateFormat = ':date_long'
 
 # Show content graph for single notes and posts.
 # Default: true
-showGraph = false
+showGraph = true
 
 # Author details for the JSON-LD structured data.
 [params.author]
@@ -30,7 +30,7 @@ recentPostsLimit = 3
 
 # Display recent notes on the homepage.
 # Default: true
-showRecentNotes = true
+showRecentNotes = false
 
 # Set how many recent notes to show.
 # Default: 5
