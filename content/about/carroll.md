@@ -1,21 +1,21 @@
 ---
-title: 'Molly: senior software engineer, challenge-seeker, mother of robots'
-date: 'Thu Jan 23 08:12:14 MST 2025'
-draft: false
-category: 'info'
+title: "Molly: senior software engineer, challenge-seeker, mother of robots"
+date: "Thu Jan 23 08:12:14 MST 2025"
+draft: true
+category: "info"
 tags:
   [
-    'molly carroll',
-    'senior software engineer',
-    'hold my beer engineer',
-    'tech lead',
-    'future tech CEO',
-    'startup founder',
-    'inventor',
-    'origin story',
-    'comedy',
+    "molly carroll",
+    "senior software engineer",
+    "hold my beer engineer",
+    "tech lead",
+    "future tech CEO",
+    "startup founder",
+    "inventor",
+    "origin story",
+    "comedy",
   ]
-summary: 'An intriguing narrative about my career/where the heck I came from. Read on about a love of learning and leadership, what two degrees I earned in college (and use to this day!) and my _first_ tech startup founder experience.'
+summary: "An intriguing narrative about my career/where the heck I came from. Read on about a love of learning and leadership, what two degrees I earned in college (and use to this day!) and my _first_ tech startup founder experience."
 ---
 
 Molly Carroll is an (alleged) human whose profession is software engineering. She is a powerhouse (workaholic.. working on it) full stack generalist in software development and has experience in software architecture, deploying + monitoring production software, lots of DevOps and doing whatever is needed for her team's/business success.
