@@ -4,7 +4,7 @@
       <li class="mb-6">
         <article class="flex flex-col space-y-1">
           <header>
-            <h3 class="text-lg font-semibold leading-none">
+            <h3 class="text-lg leading-none font-semibold">
               <a
                 href="{{ .RelPermalink }}"
                 class="underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
@@ -13,9 +13,7 @@
             </h3>
             {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
             {{- $dateHuman := .Date | time.Format (default ":date_long" .Site.Params.dateFormat) -}}
-            <time class="text-sm italic leading-5 opacity-80" datetime="{{ $dateMachine }}"
-              >{{ $dateHuman }}</time
-            >
+            <time class="text-sm leading-5 italic opacity-80" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
           </header>
 
           <div class="text-sm">{{ .Summary }}</div>

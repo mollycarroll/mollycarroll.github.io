@@ -1,4 +1,4 @@
-import type { PageSection, PageData } from './types';
+import type { PageSection, PageData } from "./types";
 
 export default class Page {
   public readonly permalink: string;
@@ -10,12 +10,12 @@ export default class Page {
 
   constructor(pageData: Partial<PageData>) {
     if (!pageData.permalink) {
-      throw new Error('Received page data without a permalink');
+      throw new Error("Received page data without a permalink");
     }
 
     this.permalink = pageData.permalink;
-    this.title = pageData.title ?? '';
-    this.summary = pageData.summary ?? '';
+    this.title = pageData.title ?? "";
+    this.summary = pageData.summary ?? "";
     this._section = pageData.section ?? null;
     this.categories = pageData.categories ?? [];
     this.tags = pageData.tags ?? [];
@@ -27,10 +27,10 @@ export default class Page {
 
   get section(): PageSection {
     if (!this._section) {
-      if (this.permalink.includes('/posts/')) {
-        this._section = 'posts';
-      } else if (this.permalink.includes('/notes/')) {
-        this._section = 'notes';
+      if (this.permalink.includes("/posts/")) {
+        this._section = "posts";
+      } else if (this.permalink.includes("/notes/")) {
+        this._section = "notes";
       } else {
         throw new Error(`Unable to determine page section from '${this.permalink}' permalink`);
       }

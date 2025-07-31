@@ -1,7 +1,7 @@
-import Page from './Page';
-import type { GraphData, PageGraph, Permalink } from './types';
-import { DataSet } from 'vis-network/standalone';
-import type { Edge, Node } from 'vis-network/standalone';
+import Page from "./Page";
+import type { GraphData, PageGraph, Permalink } from "./types";
+import { DataSet } from "vis-network/standalone";
+import type { Edge, Node } from "vis-network/standalone";
 
 const NODE_MIN_SIZE = 4;
 const NODE_MAX_SIZE = 16;
@@ -10,7 +10,7 @@ const NODE_FOCUS_SIZE = 8;
 export class PageNotFoundError extends Error {
   constructor(permalink: string) {
     super(`Page '${permalink}' not found in graph data`);
-    this.name = 'PageNotFoundError';
+    this.name = "PageNotFoundError";
   }
 }
 
@@ -65,16 +65,14 @@ export default class Graph {
     const page = this.page(permalink);
     const nodes = new DataSet<Node>();
     const edges = new DataSet<Edge>();
-    const pages = [
-      ...new Set([page, ...this.incomingFor(permalink), ...this.outgoingFor(permalink)])
-    ];
+    const pages = [...new Set([page, ...this.incomingFor(permalink), ...this.outgoingFor(permalink)])];
 
     pages.forEach((p) => {
       nodes.add({
         id: p.id,
         label: p.title,
         group: p.section,
-        size: permalink === p.permalink ? NODE_FOCUS_SIZE : NODE_MIN_SIZE
+        size: permalink === p.permalink ? NODE_FOCUS_SIZE : NODE_MIN_SIZE,
       });
 
       this.incomingFor(p.permalink).forEach((incoming) => {
@@ -97,7 +95,7 @@ export default class Graph {
       nodes.add({
         id: page.id,
         label: page.title,
-        group: page.section
+        group: page.section,
       });
 
       incoming.forEach((other) => {
@@ -110,10 +108,7 @@ export default class Graph {
     return { nodes, edges };
   }
 
-  private calcInDegree(
-    nodes: DataSet<Partial<Node>>,
-    edges: DataSet<Partial<Edge>>
-  ): Record<string, number> {
+  private calcInDegree(nodes: DataSet<Partial<Node>>, edges: DataSet<Partial<Edge>>): Record<string, number> {
     const count: Record<string, number> = {};
 
     nodes.forEach((n) => (count[n.id!] = 0));
@@ -135,8 +130,7 @@ export default class Graph {
       const degree = inDegreeCount[node.id!];
       const size =
         degree !== undefined
-          ? ((degree - minDegree) / (maxDegree - minDegree)) * (NODE_MAX_SIZE - NODE_MIN_SIZE) +
-            NODE_MIN_SIZE
+          ? ((degree - minDegree) / (maxDegree - minDegree)) * (NODE_MAX_SIZE - NODE_MIN_SIZE) + NODE_MIN_SIZE
           : NODE_MIN_SIZE;
       node.size = isNaN(size) ? NODE_MIN_SIZE : size;
     });

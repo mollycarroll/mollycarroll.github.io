@@ -1,5 +1,5 @@
-const classSuccess = '!text-green-500';
-const classFailure = '!text-red-500';
+const classSuccess = "!text-green-500";
+const classFailure = "!text-red-500";
 const clearStatusDelayMs = 3500;
 
 export default class ClipboardCopier extends HTMLElement {
@@ -8,14 +8,14 @@ export default class ClipboardCopier extends HTMLElement {
   constructor() {
     super();
 
-    const target = this.getAttribute('target');
+    const target = this.getAttribute("target");
     if (!target) {
       this.statusFailure();
-      throw new Error('missing target attribute on ClipboardCopier element');
+      throw new Error("missing target attribute on ClipboardCopier element");
     }
 
     this._target = target;
-    this.addEventListener('click', this.copyToClipboard);
+    this.addEventListener("click", this.copyToClipboard);
   }
 
   private async copyToClipboard(e: MouseEvent) {

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "lib": [
+      "esnext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "moduleResolution": "bundler",
     "noEmit": true,
     "target": "esnext",
@@ -11,11 +15,17 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "typeRoots": ["./node_modules/@types"],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "allowJs": true,
     "checkJs": true,
     "sourceMap": true
   },
-  "include": ["./assets/js/**/*.ts"],
-  "exclude": ["./node_modules/**"]
+  "include": [
+    "./assets/js/**/*.js"
+  ],
+  "exclude": [
+    "./node_modules/**"
+  ],
 }

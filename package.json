@@ -30,9 +30,9 @@
     "prettier-plugin-tailwindcss": "^0.6.5"
   },
   "scripts": {
-    "build": "hugo -s molly-til --gc",
+    "build": "hugo -s molly-carroll-dev --gc",
     "dev": "run-p dev-hugo dev-tailwind",
-    "dev-hugo": "hugo server -s molly-til --gc",
+    "dev-hugo": "hugo server -s molly-carroll-dev --gc",
     "dev-tailwind": "tailwindcss -i assets/css/main.css -o assets/css/index.css --watch",
     "format": "prettier --write ."
   }

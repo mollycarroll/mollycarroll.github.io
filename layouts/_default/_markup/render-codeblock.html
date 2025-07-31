@@ -1,7 +1,7 @@
 {{- $id := printf "codeblock-%02d" ( add .Ordinal 1) -}}
 <figure class="codeblock not-prose relative scroll-mt-8" id="{{ $id }}">
   <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+    class="absolute top-0 right-0 hidden rounded-tr-sm rounded-bl-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
   >
     <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
       <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
@@ -19,12 +19,7 @@
         </clipboard-copy>
       </div>
       <div>
-        <a
-          href="#{{ $id }}"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
+        <a href="#{{ $id }}" class="block" aria-label="Link to this code block" title="Link to this code block">
           {{ partial "svg/Link.html" }}
         </a>
       </div>
@@ -35,6 +30,6 @@
   <p class="sr-only">{{ .Type }} code snippet end</p>
 
   {{ with .Attributes.caption }}
-    <figcaption class="text-center italic text-neutral-600 dark:text-white/70">{{ . }}</figcaption>
+    <figcaption class="text-center text-neutral-600 italic dark:text-white/70">{{ . }}</figcaption>
   {{ end }}
 </figure>

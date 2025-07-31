@@ -59,7 +59,7 @@ jobs:
           else
             echo "no package-lock.json; skipping npm install"
           fi
-       # run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        # run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Cache Restore
         id: cache-restore
         uses: actions/cache/restore@v4
@@ -67,8 +67,7 @@ jobs:
           path: |
             ${{ runner.temp }}/hugo_cache
           key: hugo-${{ github.run_id }}
-          restore-keys:
-            hugo-
+          restore-keys: hugo-
       - name: Build with Hugo
         run: |
           hugo \

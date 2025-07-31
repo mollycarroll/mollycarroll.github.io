@@ -4,6 +4,8 @@ title = 'technically Molly'
 copyright = 'Molly Carroll'
 enableRobotsTXT = true
 
+enableInlineShortcodes = true
+
 [params]
 # Set how dates should appear across the site.
 # For format options, visit https://gohugo.io/functions/time/format/
@@ -107,9 +109,11 @@ weight = 6
 
 [markup]
 [markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 [markup.goldmark.parser]
 [markup.goldmark.parser.attribute]
-block = true
+block = false
 
 [markup.highlight]
 noClasses = false

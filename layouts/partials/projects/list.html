@@ -1,27 +1,24 @@
 <div class="not-prose">
-    <ol>
-      {{- range . }}
-        <li class="mb-6">
-          <article class="flex flex-col space-y-1">
-            <header>
-              <h3 class="text-lg font-semibold leading-none">
-                <a
-                  href="{{ .RelPermalink }}"
-                  class="underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
-                  >{{ .Title }}</a
-                >
-              </h3>
-              {{- $dateMachine := .Date | time.Format "Jan 2006" -}}
-              {{- $dateHuman := .Date | time.Format (default ":date_long" .Site.Params.dateFormat) -}}
-              <time class="text-sm italic leading-5 opacity-80" datetime="{{ $dateMachine }}"
-                >{{ $dateHuman }}</time
+  <ol>
+    {{- range . }}
+      <li class="mb-6">
+        <article class="flex flex-col space-y-1">
+          <header>
+            <h3 class="text-lg leading-none font-semibold">
+              <a
+                href="{{ .RelPermalink }}"
+                class="underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
+                >{{ .Title }}</a
               >
-            </header>
-  
-            <div class="text-sm">{{ .Summary }}</div>
-          </article>
-        </li>
-      {{- end }}
-    </ol>
-  </div>
-  
+            </h3>
+            {{- $dateMachine := .Date | time.Format "Jan 2006" -}}
+            {{- $dateHuman := .Date | time.Format (default ":date_long" .Site.Params.dateFormat) -}}
+            <time class="text-sm leading-5 italic opacity-80" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </header>
+
+          <div class="text-sm">{{ .Summary }}</div>
+        </article>
+      </li>
+    {{- end }}
+  </ol>
+</div>

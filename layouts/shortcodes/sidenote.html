@@ -1,11 +1,6 @@
 {{- $id := printf "%02d" ( add .Ordinal 1) -}}
 <span class="sidenote">
-  <input
-    aria-label="Show sidenote"
-    type="checkbox"
-    id="sidenote-checkbox-{{ $id }}"
-    class="sidenote-checkbox hidden"
-  />
+  <input aria-label="Show sidenote" type="checkbox" id="sidenote-checkbox-{{ $id }}" class="sidenote-checkbox hidden" />
   <label
     tabindex="0"
     role="mark"

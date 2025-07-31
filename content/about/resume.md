@@ -7,4 +7,4 @@ tags: ["resume download", "less fun non-AI resume", "molly carroll"]
 summary: "Here you can download a PDF/one page version of my resume."
 ---
 
-[PDF resume download link](https://drive.proton.me/urls/ZRQ4EPW7K4#Vc2QCYqhcKH0)
+[PDF resume download link](https://files.catbox.moe/b3m2cf.pdf)

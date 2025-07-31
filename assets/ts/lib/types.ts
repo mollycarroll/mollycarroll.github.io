@@ -1,5 +1,5 @@
 export type Permalink = string;
-export type PageSection = 'posts' | 'notes';
+export type PageSection = "posts" | "notes";
 
 export interface PageData {
   id: string;

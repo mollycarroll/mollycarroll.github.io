@@ -8,5 +8,4 @@
   {{- $.Page.Scratch.Add "outgoing" $target.Page -}}
 {{- else -}}
   {{- $.Page.Scratch.Set "outgoing" ( slice $target.Page ) -}}
-{{- end -}}
-<a href="{{ $target.RelPermalink }}" class="backlink">{{ default $target.Title (.Get 1) }}</a>
+{{- end -}} <a href="{{ $target.RelPermalink }}" class="backlink">{{ default $target.Title (.Get 1) }}</a>

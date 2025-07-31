@@ -1,10 +1,10 @@
 ---
-title: 'Welcome'
-date: 'Wed Jan 29 08:22:59 MST 2025'
+title: "Welcome"
+date: "Wed Jan 29 08:22:59 MST 2025"
 draft: false
-category: 'blog'
-tags: ['welcome to the site', 'meta']
-summary: 'explanation of the site and stuff'
+category: "blog"
+tags: ["welcome to the site", "meta"]
+summary: "explanation of the site and stuff"
 ---
 
 Here it (mostly) is! I was at my last company for a few years, so I sort of put recreating and deploying a developer portfolio/tech blog site on the backburner. With AI being way too much fun for my sleep schedule sometimes, I am proud to launch also this site.
