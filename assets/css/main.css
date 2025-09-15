@@ -1,174 +1,174 @@
-@import 'chroma.css';
+@import "chroma.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'LatoLatinWebBlack';
+  font-family: "LatoLatinWebBlack";
   src:
-    url('../fonts/LatoLatin-Black.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Black.woff') format('woff');
+    url("../fonts/LatoLatin-Black.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Black.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebBlack';
+  font-family: "LatoLatinWebBlack";
   src:
-    url('../fonts/LatoLatin-BlackItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-BlackItalic.woff') format('woff');
+    url("../fonts/LatoLatin-BlackItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-BlackItalic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWeb';
+  font-family: "LatoLatinWeb";
   src:
-    url('../fonts/LatoLatin-Bold.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Bold.woff') format('woff');
+    url("../fonts/LatoLatin-Bold.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Bold.woff") format("woff");
   font-style: normal;
   font-weight: bold;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWeb';
+  font-family: "LatoLatinWeb";
   src:
-    url('../fonts/LatoLatin-BoldItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-BoldItalic.woff') format('woff');
+    url("../fonts/LatoLatin-BoldItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-BoldItalic.woff") format("woff");
   font-style: italic;
   font-weight: bold;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebHairline';
+  font-family: "LatoLatinWebHairline";
   src:
-    url('../fonts/LatoLatin-Hairline.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Hairline.woff') format('woff');
+    url("../fonts/LatoLatin-Hairline.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Hairline.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebHairline';
+  font-family: "LatoLatinWebHairline";
   src:
-    url('../fonts/LatoLatin-HairlineItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-HairlineItalic.woff') format('woff');
+    url("../fonts/LatoLatin-HairlineItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-HairlineItalic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebHeavy';
+  font-family: "LatoLatinWebHeavy";
   src:
-    url('../fonts/LatoLatin-Heavy.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Heavy.woff') format('woff');
+    url("../fonts/LatoLatin-Heavy.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Heavy.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebHeavy';
+  font-family: "LatoLatinWebHeavy";
   src:
-    url('../fonts/LatoLatin-HeavyItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-HeavyItalic.woff') format('woff');
+    url("../fonts/LatoLatin-HeavyItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-HeavyItalic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWeb';
+  font-family: "LatoLatinWeb";
   src:
-    url('../fonts/LatoLatin-Italic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Italic.woff') format('woff');
+    url("../fonts/LatoLatin-Italic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Italic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebLight';
+  font-family: "LatoLatinWebLight";
   src:
-    url('../fonts/LatoLatin-Light.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Light.woff') format('woff');
+    url("../fonts/LatoLatin-Light.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Light.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebLight';
+  font-family: "LatoLatinWebLight";
   src:
-    url('../fonts/LatoLatin-LightItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-LightItalic.woff') format('woff');
+    url("../fonts/LatoLatin-LightItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-LightItalic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebMedium';
+  font-family: "LatoLatinWebMedium";
   src:
-    url('../fonts/LatoLatin-Medium.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Medium.woff') format('woff');
+    url("../fonts/LatoLatin-Medium.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Medium.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWeb';
+  font-family: "LatoLatinWeb";
   src:
-    url('../fonts/LatoLatin-Regular.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Regular.woff') format('woff');
+    url("../fonts/LatoLatin-Regular.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebSemibold';
+  font-family: "LatoLatinWebSemibold";
   src:
-    url('../fonts/LatoLatin-Semibold.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Semibold.woff') format('woff');
+    url("../fonts/LatoLatin-Semibold.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Semibold.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebSemibold';
+  font-family: "LatoLatinWebSemibold";
   src:
-    url('../fonts/LatoLatin-SemiboldItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-SemiboldItalic.woff') format('woff');
+    url("../fonts/LatoLatin-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-SemiboldItalic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebThin';
+  font-family: "LatoLatinWebThin";
   src:
-    url('../fonts/LatoLatin-Thin.woff2') format('woff2'),
-    url('../fonts/LatoLatin-Thin.woff') format('woff');
+    url("../fonts/LatoLatin-Thin.woff2") format("woff2"),
+    url("../fonts/LatoLatin-Thin.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: 'LatoLatinWebThin';
+  font-family: "LatoLatinWebThin";
   src:
-    url('../fonts/LatoLatin-ThinItalic.woff2') format('woff2'),
-    url('../fonts/LatoLatin-ThinItalic.woff') format('woff');
+    url("../fonts/LatoLatin-ThinItalic.woff2") format("woff2"),
+    url("../fonts/LatoLatin-ThinItalic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -176,7 +176,7 @@
 
 @layer base {
   body {
-    font-family: 'LatoLatinWeb', sans-serif;
+    font-family: "LatoLatinWeb", sans-serif;
     counter-reset: sidenote-counter;
   }
 
@@ -220,7 +220,7 @@
   }
 
   a.taxonomy {
-    @apply whitespace-nowrap rounded-sm border border-slate-200 bg-slate-100 p-1 text-sm font-semibold lowercase no-underline;
+    @apply rounded-sm border border-slate-200 bg-slate-100 p-1 text-sm font-semibold whitespace-nowrap lowercase no-underline;
   }
 
   a.taxonomy:hover {
@@ -228,7 +228,7 @@
   }
 
   a.taxonomy .count {
-    @apply relative -top-px rounded bg-slate-300 px-[3px] py-[1px] text-[10px] font-normal tabular-nums text-slate-500;
+    @apply relative -top-px rounded bg-slate-300 px-[3px] py-[1px] text-[10px] font-normal text-slate-500 tabular-nums;
   }
 
   a.taxonomy:hover .count {
@@ -287,8 +287,8 @@
 
   .sidenote-content {
     &::before {
-      @apply absolute -left-16 bottom-0 top-0 flex w-14 items-start justify-end text-sm font-semibold max-lg:hidden;
-      content: counter(sidenote-counter) '.';
+      @apply absolute top-0 bottom-0 -left-16 flex w-14 items-start justify-end text-sm font-semibold max-lg:hidden;
+      content: counter(sidenote-counter) ".";
     }
 
     @apply motion-safe:transition-all lg:absolute lg:right-0 lg:w-48 lg:cursor-default;
@@ -307,7 +307,7 @@
   }
 
   .admonition {
-    @apply my-6 rounded border bg-slate-100 py-4 pl-2 pr-4 text-slate-800 shadow-sm;
+    @apply my-6 rounded border bg-slate-100 py-4 pr-4 pl-2 text-slate-800 shadow-sm;
 
     svg {
       @apply relative -top-[2px];

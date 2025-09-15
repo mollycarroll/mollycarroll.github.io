@@ -1,10 +1,10 @@
 ---
-title: 'Successful outcomes for AI for HR project as dev/tech team lead'
-date: '2024-04-13T01:33:53-06:00'
+title: "Successful outcomes for AI for HR project as dev/tech team lead"
+date: "2024-04-13T01:33:53-06:00"
 draft: false
-category: 'project'
-tags: ['tech lead', 'AI PoC', 'AI copilot', 'AI evaluation', 'real-time analysis', 'React JS', 'Python', 'AI21']
-summary: 'My first professional project as a tech lead was for a RAG-enabled AI bot that acts as a real-time evaluator copilot for recruiters to use in job interviewing, evaluating candidates against given role criteria in real time.'
+category: "project"
+tags: ["tech lead", "AI PoC", "AI copilot", "AI evaluation", "real-time analysis", "React JS", "Python", "AI21"]
+summary: "My first professional project as a tech lead was for a RAG-enabled AI bot that acts as a real-time evaluator copilot for recruiters to use in job interviewing, evaluating candidates against given role criteria in real time."
 ---
 
 As a software engineer at Thoughtworks, I was eager to take on new challenges and contribute meaningfully to our company's growth. The challenge I hadn't had the opportunity to take until this project was the (to me) long strived-for role of tech lead. I partnered with PromptCamp's leader, David Chen, and I was charged with recruiting a technical team to lead full-cycle building Interview Genie, an AI-powered interviewing copilot tool designed to streamline the candidate selection process.

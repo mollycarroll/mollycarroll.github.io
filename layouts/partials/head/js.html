@@ -7,12 +7,7 @@
   {{- else }}
     {{- $opts = merge $opts ( dict "minify" true ) -}}
     {{- with . | js.Build $opts  | fingerprint }}
-      <script
-        src="{{ .RelPermalink }}"
-        integrity="{{- .Data.Integrity }}"
-        crossorigin="anonymous"
-        defer
-      ></script>
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
     {{- end }}
   {{- end }}
 {{- end }}

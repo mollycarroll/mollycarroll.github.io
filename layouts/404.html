@@ -9,9 +9,7 @@
     <ul>
       <li>Return to the <a href="{{ .Site.Home.RelPermalink }}">home page</a>.</li>
       <li>
-        <a href="https://web.archive.org/web/*/{{ .Permalink | urlize }}"
-          >See if the Internet Archive has a copy</a
-        >
+        <a href="https://web.archive.org/web/*/{{ .Permalink | urlize }}">See if the Internet Archive has a copy</a>
         if you believe this page once existed.
       </li>
       {{- with (where .Pages "Section" "posts" ) }}

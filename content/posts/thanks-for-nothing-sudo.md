@@ -1,22 +1,22 @@
 ---
-title: 'Thanks for nothing, sudo'
-date: 'Fri Feb 28 02:08:21 MDT 2025'
+title: "Thanks for nothing, sudo"
+date: "Fri Feb 28 02:08:21 MDT 2025"
 draft: false
-category: 'blog'
-tags: [
-    'blocker',
-   'digital ocean',
-   'ssh',
-   'debugging',
-   'virtual machines',
-   'mac/linux differences',
-   'constantly learning',
-   'tech community support',
-   'homebrew'
-]
-summary: 'I experienced one of those blockers that does not resolve despite omni-Googling and trying it all. I expected I was senior enough to be able to solve this silly thing. The culprit - SSH access to remote VMs'
+category: "blog"
+tags:
+  [
+    "blocker",
+    "digital ocean",
+    "ssh",
+    "debugging",
+    "virtual machines",
+    "mac/linux differences",
+    "constantly learning",
+    "tech community support",
+    "homebrew",
+  ]
+summary: "I experienced one of those blockers that does not resolve despite omni-Googling and trying it all. I expected I was senior enough to be able to solve this silly thing. The culprit - SSH access to remote VMs"
 ---
-
 
 I love coding, and doing this intensive project for a year hasn’t made me hate it, thankfully. However there is one output message I would enjoy never seeing ever again:
 

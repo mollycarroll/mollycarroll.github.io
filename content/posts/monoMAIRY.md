@@ -1,10 +1,10 @@
 ---
-title: 'Adorably unreliable - my toddler chatbot'
-date: 'Sun Feb 9 08:24:54 MST 2025'
+title: "Adorably unreliable - my toddler chatbot"
+date: "Sun Feb 9 08:24:54 MST 2025"
 draft: false
-category: 'blog'
-tags: ['production software', 'production release', 'deployment', 'cloud computing', 'architecture']
-summary: 'In the bleeding edge open-source AI world, incompatibilities and requirements to shift and learn about other aspects of the full system pop up a LOT. It helps to love learning/challenges (👍) and be patient when excited (👎). Here is my mAIRy chatbot facing some blockers.'
+category: "blog"
+tags: ["production software", "production release", "deployment", "cloud computing", "architecture"]
+summary: "In the bleeding edge open-source AI world, incompatibilities and requirements to shift and learn about other aspects of the full system pop up a LOT. It helps to love learning/challenges (👍) and be patient when excited (👎). Here is my mAIRy chatbot facing some blockers."
 ---
 
 Sometimes I give myself the title "Mother of Robots" as one, I’m a fan of the book series _A Song of Ice and Fire_ (and the character [Danaerys Targaryen](https://drive.proton.me/urls/PDA93P99WM#mlunI4f5cj6Y)) and two, robots are probably the closest to children I will produce anyway, so have them be my children. It fits, as I sometimes find computers and robots easier to work with / understand than humans. So far I’ve named them, too.
