@@ -1,4 +1,5 @@
 @import "chroma.css";
+@import "tailwindcss"
 
 @tailwind base;
 @tailwind components;
@@ -198,7 +199,7 @@
   }
 
   article.main .codeblock-meta a {
-    @apply !text-white/70 hover:!text-sky-400;
+    @apply !text-white/70 hover: !text-sky-400;
   }
 
   article.main figure {
@@ -252,16 +253,16 @@
     counter-increment: sidenote-counter;
   }
 
-  .sidenote-checkbox ~ .sidenote-content {
+  .sidenote-checkbox~.sidenote-content {
     @apply max-lg:sr-only;
   }
 
   .sidenote-checkbox:checked {
-    & ~ .sidenote-content {
+    &~.sidenote-content {
       @apply max-lg:not-sr-only max-lg:left-auto max-lg:float-left max-lg:my-2 max-lg:block max-lg:min-w-full max-lg:pl-4 max-lg:text-sky-600;
     }
 
-    & ~ .sidenote-mark {
+    &~.sidenote-mark {
       @apply no-underline max-lg:text-sky-600;
     }
   }
@@ -358,7 +359,7 @@
   }
 
   article.main .diagram-meta a {
-    @apply !text-gray-500 transition-colors hover:!text-sky-400;
+    @apply !text-gray-500 transition-colors hover: !text-sky-400;
   }
 
   footer a {

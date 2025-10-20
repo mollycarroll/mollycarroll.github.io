@@ -1,7 +1,7 @@
 ---
 title: "Currently open to part-time & freelance technical consulting/development"
 date: "Mon Apr  7 15:53:45 MDT 2025"
-draft: false
+draft: true
 category: "info"
 tags:
   [
