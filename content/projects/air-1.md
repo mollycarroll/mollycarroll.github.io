@@ -16,7 +16,7 @@ tags:
     "chatbot",
     "generative AI",
   ]
-summary: "One day long ago I decided to build a chatbot that does my job interviews for me. This led to a magnitude of learning what I needed to do this that this post is only a fraction of the story."
+summary: "One day I decided to build a chatbot that does my job interviews for me. This led to a magnitude of learning what I needed to do this that this post is only a fraction of the story."
 ---
 
 > FYI (April 2025): I wrote this post at the project's "soft launch" in January. Since then it has gone through transitions--mostly in architecture and additional functionality. I have a lot to say about this project, and future posts will discuss this additional development work.
