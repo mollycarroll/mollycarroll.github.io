@@ -1,5 +1,4 @@
 baseURL = 'https://mollycarroll.dev'
-languageCode = 'en-us'
 title = "technically Molly"
 copyright = 'Molly Carroll'
 enableRobotsTXT = true

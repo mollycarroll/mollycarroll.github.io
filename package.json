@@ -22,6 +22,7 @@
     "vis-network": "^9.1.9"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.13",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
@@ -33,9 +34,9 @@
     "prettier-plugin-tailwindcss": "^0.6.5"
   },
   "scripts": {
-    "build": "hugo -s molly-carroll-dev --gc",
+    "build": "hugo --gc",
     "dev": "run-p dev-hugo dev-tailwind",
-    "dev-hugo": "hugo server -s molly-carroll-dev --gc",
+    "dev-hugo": "hugo server --gc",
     "dev-tailwind": "tailwindcss -i assets/css/main.css -o assets/css/index.css --watch",
     "format": "prettier --write ."
   }
